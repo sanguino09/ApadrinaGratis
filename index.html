@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Grid</title>
+  </head>
+  <body>
+    <div class="parent">
+        <!--topbar-->
+      <div class="div1">
+        <div class="div1name">ApadrinaGratis</div>
+        <div class="div1share">Comparte</div>
+      </div>
+      <div class="div2">
+        <p style="color:#313131;text-align:center;">¡Solo 3 anuncios y ya!</p>
+      </div>
+      <!---------------------------------------------------------->
+      <!--video player-->
+      <div class="div3">
+        <video
+          width="100%"
+          height="100%"
+          id="player"
+          playsinline
+          controls
+          data-poster="/path/to/poster.jpg"
+        >
+          <source src="./videos/video2.mp4" type="video/mp4" />
+        </video>
+        <div class="numVideo">1/3</div>
+      </div>
+      <!--------------------------------------------------------->
+      <!--image carrousel starts-->
+      <div class="div4">
+        <p class="slider-title">
+          Gracias a los anuncios estás alimentando a estos peluditos amigos.
+        </p>
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="./images/cariñoso.jpg" />
+            </div>
+            <div class="slide">
+              <img src="./images/kevin.jpg" />
+            </div>
+            <div class="slide">
+              <img src="./images/tommy.jpg" />
+            </div>
+            <div class="slide">
+              <img src="./images/labbebe.jpg" />
+            </div>
+            <div class="slide">
+              <img src="./images/zack.jpeg" />
+            </div>
+            <!--repeat the images-->
+            <div class="slide">
+              <img src="./images/cariñoso.jpg" />
+            </div>
+            <div class="slide">
+              <img src="./images/kevin.jpg" />
+            </div>
+            <div class="slide">
+              <img src="./images/tommy.jpg" />
+            </div>
+            <div class="slide">
+              <img src="./images/labbebe.jpg" />
+            </div>
+            <div class="slide">
+              <img src="./images/zack.jpeg" />
+            </div>
+          </div>
+        </div>
+        <!-- image carrousel ends-->
+        <!-- <p hidden class="slider-title" style="font-size: x-small;">
+            ApadrinaGratis | Hagamos del mundo un lugar mejor.
+          </p>-->
+      </div>
+    </div>
+  </body>
+</html>
