@@ -8,7 +8,6 @@ body {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 .wrapgrid {
   overflow-x: hidden;
@@ -54,22 +53,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-/*starts main stage*/
-.upperButtons {
-  width: 100vw;
-  height: 8vh;
-  display: flex;
-  align-items: center;
-}
-.share {
-  color: #383838;
-}
-.more {
-  color: white;
-  padding-left: 1vw;
-  margin-left: 45vw;
-}
-/*ends main stage*/
 
 /*starts foldable hamburger menu */
 a {
@@ -313,7 +296,25 @@ label::before {
 .media-icons a:nth-child(4):hover {
   color: #7600bc;
 }
+.upperButtons {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+}
+.share {
+  color: #383838;
+}
 /*ends share button*/
+
+/*starts bell alarm*/
+.fa-bell {
+  color: white;
+}
+.bellAlarm {
+  margin-left: 50vw;
+}
+/*ends bell alarm*/
 
 .shelterName {
   width: 100vw;
@@ -406,18 +407,47 @@ button.class:active {
   border: 2px solid #383838;
 }
 /*ends sponsor button*/
-.fa-bell {
-  color: white;
-}
-.bellAlarm {
-  margin-left: 50vw;
-}
+
+/*starts gallery*/
 .gallery{
   margin-top: 5vw;
   width:100%;
   height:100%;
 }
+.fa-image{
+  color:white;
+}
+.galleryIconBox{
+  width: 100vw;
+  margin-top: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.barUnderBox{
+  margin-top: 2vw;
+  width:100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bar{
+  background-color: white;
+  height:1vw;
+  border-radius: 5vw;
+  width: 30vw;
+}
+.images{
+  margin-right:5vw;
+}
+.video{
+  background-color: #383838;
+}
 
+.galleryIcon{
+  display: flex;
+  justify-content: center;
+}
 .modal{
   position:fixed;
   top:0;
@@ -448,11 +478,14 @@ button.class:active {
 }
 .main{
   margin-top:30px;
+  background-color: #383838;
 }
 .grid{
   display:grid;
   grid-template-columns:repeat(3, 1fr);
-  gap:1vw;
+  margin-left:3vw;
+  margin-right:2vw;
+  gap:2vw;
 }
 
 .grid img{
@@ -464,7 +497,11 @@ button.class:active {
 .grid img:hover{
   opacity:0.8;
 }
+.footer{
+  position: fixed;
+  display: none;
 
+}
 
 @media (max-width:980px) {
   .grid{
