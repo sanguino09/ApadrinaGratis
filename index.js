@@ -1,21 +1,27 @@
-const shareButton = document.querySelector('.share-button');
-const shareDialog = document.querySelector('.share-dialog');
-const closeButton = document.querySelector('.close-button');
+const images = Array.from(document.querySelectorAll('.grid img'));
+const modal = document.querySelector('.modal');
 
-shareButton.addEventListener('click', event => {
-  if (navigator.share) { 
-   navigator.share({
-      title: 'WebShare API Demo',
-      url: 'https://codepen.io/ayoisaiah/pen/YbNazJ'
-    }).then(() => {
-      console.log('Thanks for sharing!');
-    })
-    .catch(console.error);
-    } else {
-        shareDialog.classList.add('is-open');
+const closeBtn = document.querySelector('.btn');
+
+
+images.forEach(image => {
+  image.addEventListener('click', () => {
+    modal.classList.add('active');
+    const img = document.createElement('img');
+    img.src = image.src;
+    if(modal.children[1]){
+      modal.removeChild(modal.children[1]);
     }
+    modal.appendChild(img);
+  })
+})
+
+window.addEventListener('click', (e) => {
+  if(e.target === modal){
+    modal.classList.remove('active');
+  }
 });
 
-closeButton.addEventListener('click', event => {
-  shareDialog.classList.remove('is-open');
-});
+closeBtn.addEventListener('click', () => {
+  modal.classList.remove('active');
+})
