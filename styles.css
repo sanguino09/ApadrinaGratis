@@ -497,10 +497,30 @@ button.class:active {
 .grid img:hover{
   opacity:0.8;
 }
-.footer{
-  position: fixed;
-  display: none;
-
+.footer { 
+  position: fixed; 
+  left: 0 ; right: 0; bottom: 0; 
+  height:15vw;
+  background-color: white;
+  display:flex;
+  align-items: center;
+  font-weight: bolder;
+  width:100vw;
+  border-radius:3vw 3vw 0 0;
+}
+.appName{
+  margin-left: 3vw;
+  color:#383838;
+}
+.fa-paw{
+  margin-right:1vw;
+}
+.coinsBox{
+  margin-left:50vw;
+}
+.fa-coins{
+  margin-left:1vw;
+  color: #383838;
 }
 
 @media (max-width:980px) {
