@@ -53,6 +53,9 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
+  max-width: 800px;
+  display: flex;
+  justify-self: center;
 }
 
 /*starts foldable hamburger menu */
@@ -157,7 +160,7 @@ a:hover {
 #menu {
   position: absolute;
   width: 200px;
-  margin: -100px 0 0 0;
+  margin: -100px -1vw 0 0;
   padding: 50px;
   padding-top: 125px;
   right: -10vw;
@@ -318,7 +321,7 @@ label::before {
 /*ends bell alarm*/
 
 .shelterName {
-  width: 100vw;
+  width: auto;
   margin-top: -10px;
   color: white;
   font-weight: bolder;
@@ -330,7 +333,7 @@ label::before {
 
 .shelterDescriptionBox {
   margin-top: 10px;
-  width: 100vw;
+  width: auto;
   color: white;
   font-weight: 200;
   font-size: small;
@@ -382,7 +385,7 @@ label::before {
   }
 }
 /*starts sponsor button*/
-.sponsorButton {
+.sponsorButtonDiv {
   display: flex;
   justify-content: center;
   margin-top: 5vw;
@@ -399,6 +402,13 @@ button {
   display: flex;
   align-items: center;
 }
+.sponsorButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height:80px;
+  max-width: 350px;
+}
 .playLogo {
   margin-left: 5vw;
 }
@@ -410,119 +420,285 @@ button.class:active {
 /*ends sponsor button*/
 
 /*starts gallery*/
-.gallery{
+.galleryDiv {
+  display: flex;
+  justify-content: center;
+}
+.gallery {
   margin-top: 5vw;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   background-color: #232323;
-  border-radius:5vw;
+  border-radius: 5vw;
 }
-.fa-image{
-  color:white;
+.fa-image {
+  color: white;
 }
-.galleryIconBox{
-  width: 100vw;
+.galleryIcon {
+  margin-top: 2vw;
+}
+.galleryIconBox {
+  width: auto;
   margin-top: 5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.barUnderBox{
+.barUnderBox {
   margin-top: 2vw;
-  width:100vw;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.bar{
+.bar {
   background-color: white;
-  height:1vw;
+  height: 1vw;
   border-radius: 5vw;
   width: 30vw;
 }
-.video{
+.video {
   background-color: #232323;
 }
-.galleryIcon{
+.galleryIcon {
   display: flex;
   justify-content: center;
 }
-.modal{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background-color: rgba(0,0,0,0.7);
-  z-index:-1;
-  display:flex;
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
-.modal.active{
-  opacity:1;
-  z-index:100;
+.modal.active {
+  opacity: 1;
+  z-index: 100;
 }
-.modal .btn{
+.modal .btn {
   position: absolute;
-  top:20px;
-  right:20px;
-  color:#fff;
+  top: 20px;
+  right: 20px;
+  color: #fff;
   background-color: transparent;
-  border:0;
+  border: 0;
   font-size: 25px;
   cursor: pointer;
 }
-.main{
-  margin-top:30px;
-  background-color: #383838;
+.main {
+  margin-top: 30px;
+  background-color: #232323;
 }
-.grid{
-  display:grid;
-  grid-template-columns:repeat(2, 1fr);
-  gap:1vw;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vw;
+  margin-top: -2vw;
 }
 
-.grid img{
-  width:50vw;
-  height:30vh;
+.grid img {
+  width: 49.5vw;
+  max-width: 385px;
+  height: 30vh;
   cursor: pointer;
   transition: opacity 0.5s ease-in-out;
 }
-.grid img:hover{
-  opacity:0.8;
+.grid img:hover {
+  opacity: 0.8;
 }
 /*gallery ends*/
-.footer { 
-  position: fixed; 
-  left: 0 ; right: 0; bottom: 0; 
-  height:15vw;
+.footer {
+  box-shadow: 0 -3px 3px -3px #383838;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 15vw;
   background-color: white;
-  display:flex;
+  display: flex;
   align-items: center;
   font-weight: bolder;
-  width:100vw;
-  border-radius:3vw 3vw 0 0;
+  width: 100vw;
+  border-radius: 3vw 3vw 0 0;
+  max-height: 80px;
 }
-.appName{
+.appName {
   margin-left: 3vw;
-  color:#383838;
-}
-.fa-paw{
-  margin-right:1vw;
-}
-.coinsBox{
-  margin-left:50vw;
-}
-.fa-coins{
-  margin-left:1vw;
   color: #383838;
 }
-
-@media (max-width:980px) {
+.fa-paw {
+  margin-right: 1vw;
+}
+.coinsBox {
+  margin-left: 50vw;
+}
+.fa-coins {
+  margin-left: 1vw;
+  color: #383838;
+}
+@media (min-width: 400px) {
+  .mainbox {
+    margin-top: 12vw;
+  }
+}
+@media (min-width: 500px) {
+  .mainbox {
+    margin-top: 10vw;
+  }
+  .coinsBox {
+    margin-left: 60vw;
+  }
+  .playLogo {
+    margin-left: 10vw;
+  }
+  .sponsorButtonDiv{
+    margin-top:3vw;
+  }
+  .progress1{
+    margin-top: 2vw;
+  }
+  .gallery{
+    margin-top: 2vw;
+  }
+  .galleryIconBox{
+    margin-top: 1vw;
+  }
+  .barUnderBox{
+    margin-top: 0.5vw;
+  }
   .grid{
-    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0.2vw;
+  }
+  .bar{
+    height:0.5vw;
+  }
+}
+@media (min-width: 600px) {
+  .mainbox {
+    margin-top: 9vw;
+  }
+  .coinsBox {
+    margin-left: 60vw;
+  }
+  .playLogo {
+    margin-left: 10vw;
+  }
+}
+@media (min-width: 700px) {
+  #menu{
+    right:-8vw;
+  }
+  .mainbox {
+    margin-top: 8vw;
+  }
+  .coinsBox {
+    margin-left: 52vw;
+  }
+  .footer {
+    font-size: larger;
+  }
+  .appName {
+    width: 250px;
+  }
+}
+@media (min-width: 800px) {
+  .grid{
+    margin-left:5px;
+  }
+  #menu{
+    right:-6vw;
+  }
+  .mainbox {
+    margin-top: 7vw;
+  }
+  .coinsBox {
+    margin-left: 56vw;
+  }
+  .footer {
+    font-size: larger;
+  }
+}
+@media (min-width: 900px) {
+  .bellAlarm{
+    margin-left: 45vw;
+  }
+  .mainbox {
+    margin-top: 6vw;
+  }
+  .footer {
+    font-size: larger;
+  }
+}
+@media (min-width: 1000px) {
+  .bellAlarm{
+    margin-left: 40vw;
+  }
+  #menu{
+    right:-4vw;
+  }
+  .mainbox {
+    margin-top: 5vw;
+  }
+  .footer {
+    font-size: xx-large;
+  }
+  .coinsBox {
+    margin-left: 50vw;
+  }
+  .appName {
+    width: 350px;
+  }
+}
+@media (min-width:1100px){
+  .bellAlarm{
+    margin-left: 35vw;
+  }
+}
+@media (min-width: 1200px) {
+  .bellAlarm{
+    margin-left: 30vw;
+  }
+  .mainbox {
+    margin-top: 4vw;
+  }
+  .coinsBox {
+    margin-left: 55vw;
+  }
+}
+@media (min-width: 1300px) {
+  .bellAlarm{
+    margin-left: 30vw;
+  }
+  .mainbox{
+    margin-left: 12vw;
+  }
+  .coinsBox {
+    margin-left: 55vw;
+  }
+}
+@media (min-width: 1300px) {
+  #menu{
+    right:-3vw;
+  }
+  .mainbox {
+    margin-top: 4vw;
+  }
+  .coinsBox {
+    margin-left: 60vw;
+  }
+}
+@media (min-width: 1500px) {
+  #menu{
+    right:-2vw;
+  }
+  .mainbox{
+    margin-left: 10vw;
   }
 }
