@@ -17,9 +17,50 @@
     <title>ApadrinaGratis</title>
   </head>
   <body>
+    <!-- (A) THIS WILL SHOW ON THE WRONG ORIENTATION -->
+    <div class="turn">
+      <div class="turnTextBox">
+        <div class="turnText">
+          Gira tu móvil a como lo usas siempre para poder usar la plataforma y
+          así ayudar a los animalitos.
+        </div>
+      </div>
+    </div>
+    <!--starts foldable hamburger menu-->
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+        <input type="checkbox" />
+
+        <!--
+            Some spans to act as a hamburger.
+            
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+        <ul id="menu">
+          <a href="#"><li>ApadrinaYa</li></a>
+          <a href="#"><li>Blog</li></a>
+          <a href="./contact.html"><li>Contacto</li></a>
+          <a href="#"><li>Política y Privacidad</li></a>
+        </ul>
+      </div>
+    </nav>
+    <!--ends foldable hamburger menu-->
     <!-- comienza el contacto -->
     <section id="contact">
-      <h2>CONTACTA CON <span style="color: #b39c4d">NOSOTROS</span></h2>
+      <div class=contactTitle><h2>CONTACTA<br> CON <br><span style="color: #b39c4d">NOSOTROS</span></h2></div>
       <div class="container">
         <div class="row">
           <div class="formDiv">
@@ -77,7 +118,7 @@
               <p class="address-title">Datos de contacto</p>
               <p>
                 <i class="fa fa-phone"></i
-                ><a href="tel:+34635400085">+34 640 09 48 58</a>
+                ><a class="phoneNumberText" href="tel:+34635400085">+34 640 09 48 58</a>
               </p>
               <p><i class="fa fa-envelope-o"></i>apadrinagratis@gmail.com</p>
             </address>
