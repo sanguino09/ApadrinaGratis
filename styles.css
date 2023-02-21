@@ -749,7 +749,7 @@ button.class:active {
     display: none;
   }
   .parent {
-    display: block;
+    display: grid;
   }
   #menuToggle {
     display: block;
