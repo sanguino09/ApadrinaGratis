@@ -8,10 +8,10 @@
         startOnPageLoad: true,
         onHide: function(){},
         onShow: function(){},
-        forcePortrait: false,
-        message: "Please Rotate Your Device",
-        subMessage: "(or click to continue)",
-        allowClickBypass: true,
+        forcePortrait: true,
+        message: "Gira el teléfono para poder usar la plataforma y ayudar a los animalitos.",
+        subMessage: "(así tumbado no se ve bien)",
+        allowClickBypass: false,
         onlyMobile: true,
         zIndex: 1000,
         iconNode: null
@@ -275,7 +275,3 @@
     }
 
 })();
-
-PleaseRotateOptions = {
-    forcePortrait: true // if you would prefer to force portrait mode
-};
