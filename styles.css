@@ -723,7 +723,7 @@ button.class:active {
 .turn {
   display: none;
   width: 100vw;
-  height: 100vw;
+  height: 20vw;
 }
 .turnTextBox {
   display: flex;
