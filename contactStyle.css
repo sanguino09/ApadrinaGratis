@@ -76,6 +76,7 @@ h2 span {
 .form-control{
     color:#383838;
     background-color: #fff;
+  padding:2vw;
 }
 #contact label {
   font-weight: 500;
