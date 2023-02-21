@@ -1,3 +1,4 @@
+/*
 (function(){
     var PleaseRotate = {},
         currentOrientation = null,
@@ -30,7 +31,7 @@
     ];
 
     /* private functions */
-   
+  /* 
     function overrideOptions(updates){
         var prop;
         for (var prop in updates){
@@ -40,7 +41,7 @@
 
     function setBodyClass(state){
         if(document.documentElement){
-            document.documentElement.className = document.documentElement.className.replace( /(?:^|\s)pleaserotate-\S*/g , '' );
+            document.documentElement.className = document.documentElement.className.replace( /(?:^|\s)pleaserotate-\Sg , '' );
             document.documentElement.className += " pleaserotate-" + state;
         }
     }
@@ -197,7 +198,7 @@
     }
 
     /* public functions */
-
+/*
     PleaseRotate.start = function(opts){
         if(!document.body){
             window.addEventListener('load', PleaseRotate.start.bind(null, opts), false);
@@ -255,7 +256,7 @@
     PleaseRotate.Showing = false;
 
     /* plumbing to support AMD, CommonJS, or Globals */
-
+/*
     if (typeof define === 'function' && define.amd) {
         setBodyClass("initialized");
         define(['PleaseRotate'], function() {
@@ -275,3 +276,5 @@
     }
 
 })();
+*/
+

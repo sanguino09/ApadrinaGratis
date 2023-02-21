@@ -702,3 +702,9 @@ button.class:active {
     margin-left: 10vw;
   }
 }
+@media only screen and (orientation:portrait) {
+  body {
+    height: 100vw;
+    transform: rotate(90deg);
+  }
+}
