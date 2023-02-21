@@ -1,0 +1,196 @@
+/*
+Awesome Template
+http://www.templatemo.com/preview/templatemo_450_awesome
+*/
+@import url("https://fonts.cdnfonts.com/css/modern-sans");
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #383838;
+  color: white;
+}
+a {
+  color: #b39c4d;
+}
+
+a:hover {
+  color: #e6e6e6;
+}
+
+/* start h2 */
+h2 {
+  height: 40px;
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+h2 span {
+  color: #1e2f23;
+  font-weight: bold;
+}
+/* end h2 */
+
+/* start contact */
+#contact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.row {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5vw;
+}
+#contact .form-control {
+  background: transparent;
+  border: 1px solid #b39c4d;
+  border-radius: 2px;
+  box-shadow: none;
+  color: #fff;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+#contact label {
+  font-weight: 500;
+}
+#contact input {
+  height: 50px;
+}
+#contact input[type="submit"] {
+  background: #b39c4d;
+  font-weight: bold;
+}
+#contact input[type="submit"]:hover {
+  background: transparent;
+}
+#contact address {
+  border-bottom: 1px solid #505050;
+  padding-top: 30px;
+}
+#contact address .address-title {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+#contact address span {
+  display: block;
+  padding-bottom: 30px;
+}
+#contact address .fa {
+  border: 1px solid #fff;
+  border-radius: 2px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+/* end contact */
+
+/* start social icon */
+.social-icon {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.social-icon h4 {
+  display: inline-block;
+  padding-right: 20px;
+}
+.social-icon li {
+  display: inline-block;
+  list-style: none;
+}
+.social-icon li a {
+  border: 1px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  margin-right: 10px;
+}
+.social-icon li a:hover {
+  background: #b39c4d;
+  border-color: transparent;
+}
+/* end social icon */
+@media (max-width: 1000px) {
+  .row {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+  }
+  .address-title {
+    margin-bottom: 2px;
+  }
+}
+/*thanks page*/
+.thanksBody {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.content {
+  width: 100vw;
+  height:50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.logo {
+  margin-top: 5vw;
+  padding: 5vw;
+  font-size: 6vw;
+  font-weight: bolder;
+}
+.thanksContainer{
+  padding-bottom: 5vw;
+  font-size: 3vw;
+}
+.returnButton{
+    font-size: 3vw;
+    background-color:#232323;
+    padding: 2vw;
+    width:fit-content;
+    border-radius: 2vw;
+  }
+  .returnButtonDiv{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width:500px) {
+    
+  }

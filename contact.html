@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" type="text/css" href="contactStyle.css" />
+    <script
+      src="https://kit.fontawesome.com/2d2b11dff3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <link rel="icon" href="./images/paw.ico" />
+    <title>ApadrinaGratis</title>
+  </head>
+  <body>
+    <!-- comienza el contacto -->
+    <section id="contact">
+      <h2>CONTACTA CON <span style="color: #b39c4d">NOSOTROS</span></h2>
+      <div class="container">
+        <div class="row">
+          <div class="formDiv">
+            <form
+              action="https://formsubmit.co/apadrinagratis@gmail.com"
+              method="POST"
+            >
+              <div class="nameDiv">
+                <label>Tu Nombre</label><br />
+                <input
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  id="fullname"
+                  required
+                />
+              </div>
+              <div class="emailDiv">
+                <label>Tu Email</label><br />
+                <input
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="messageDiv">
+                <label>Tu Mensaje</label><br />
+                <textarea
+                  name="message"
+                  rows="4"
+                  class="form-control"
+                  id="message"
+                  required
+                ></textarea>
+                <input type="hidden" name="_captcha" value="false" />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://github.com/sanguino09/ApadrinaGratis/thanks.html"
+                />
+                <input type="hidden" name="_template" value="table" />
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Nuevo Mensaje recibido desde ApadrinaGratis.com"
+                />
+              </div>
+              <button type="submit" class="form-control" />
+            </form>
+          </div>
+          <div class="addressDiv">
+            <address>
+              <p class="address-title">Datos de contacto</p>
+              <p>
+                <i class="fa fa-phone"></i
+                ><a href="tel:+34635400085">+34 640 09 48 58</a>
+              </p>
+              <p><i class="fa fa-envelope-o"></i>apadrinagratis@gmail.com</p>
+            </address>
+            <ul class="social-icon">
+              <li><h4>Redes</h4></li>
+              <li>
+                <a
+                  href="https://www.facebook.com/apadrinagratis/"
+                  class="fa fa-facebook"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://api.whatsapp.com/send?phone=34640094858"
+                  class="fa fa-whatsapp"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- termina el contacto -->
+  </body>
+</html>

@@ -723,7 +723,7 @@ button.class:active {
 .turn {
   display: none;
   width: 100vw;
-  height: 20vw;
+  height: 100vw;
 }
 .turnTextBox {
   display: flex;
@@ -732,7 +732,7 @@ button.class:active {
   color:#383838;
   font-weight: bolder;
   width: 100vw;
-  height: 20vw;
+  height: 100vw;
 }
 /* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
 @media only screen and (max-width: 1200px) and (orientation: landscape) {
