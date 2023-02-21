@@ -73,10 +73,17 @@ h2 span {
   margin-top: 6px;
   margin-bottom: 16px;
 }
-.form-control{
-    color:#383838;
-    background-color: #fff;
-    padding: 0.5vw 2vw 0.5vw 2vw;
+.form-controlButton {
+  color: #383838;
+  background-color: #fff;
+  border: 1px solid #b39c4d;
+  border-radius: 2px;
+  box-shadow: none;
+  font-weight: bolder;
+}
+.form-controlButton:hover {
+  color: #fff;
+  background-color: #b39c4d;
 }
 #contact label {
   font-weight: 500;
@@ -168,7 +175,7 @@ h2 span {
 }
 .content {
   width: 100vw;
-  height:50vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -179,23 +186,23 @@ h2 span {
   font-size: 6vw;
   font-weight: bolder;
 }
-.thanksContainer{
+.thanksContainer {
   padding-bottom: 5vw;
   font-size: 3vw;
 }
-.returnButton{
-    font-size: 3vw;
-    background-color:#232323;
-    padding: 2vw;
-    width:fit-content;
-    border-radius: 2vw;
-  }
-  .returnButtonDiv{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-  }
-
-  @media (max-width:500px) {
-    
-  }
+.returnButton {
+  font-size: 3vw;
+  background-color: #232323;
+  padding: 2vw;
+  width: fit-content;
+  border-radius: 2vw;
+}
+.returnButtonDiv {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.form-control:hover {
+  color: #383838;
+  background-color: white;
+}
