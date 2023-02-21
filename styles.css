@@ -702,7 +702,7 @@ button.class:active {
     margin-left: 10vw;
   }
 }
-@media (orientation:landscape) {
+@media only screen and (orientation:landscape) {
   body {
     width:100vw;
     transform: rotate(90deg);
