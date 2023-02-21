@@ -703,13 +703,11 @@ button.class:active {
   }
 }
 @media only screen and (orientation:landscape) {
-  body {
     body {
     width: auto;
     height:auto;
     transform: rotate(-90deg);
     overflow-y: hidden;
     overflow-x: visible;
-  }
   }
 }
