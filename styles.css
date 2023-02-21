@@ -706,8 +706,8 @@ button.class:active {
     body {
     width: auto;
     height:auto;
-    transform: rotate(-90deg);
+    transform: rotate(270deg);
     overflow-y: hidden;
-    overflow-x: visible;
+    overflow-x: scroll;
   }
 }
