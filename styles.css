@@ -702,7 +702,7 @@ button.class:active {
     margin-left: 10vw;
   }
 }
-@media only screen and (orientation:landscape) {
+@media only screen and (orientation:landscape-secondary) {
     body {
     width: auto;
     height:auto;
@@ -711,3 +711,13 @@ button.class:active {
     overflow-x: scroll;
   }
 }
+@media only screen and (orientation:landscape-primary) {
+  body {
+    width: auto;
+    height:auto;
+    transform: rotate(90deg);
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+}
+
