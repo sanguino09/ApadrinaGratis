@@ -9,6 +9,7 @@ body {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
+  --value: none;
 }
 .wrapgrid {
   overflow-x: hidden;
@@ -537,11 +538,17 @@ button.class:active {
   margin-right: 1vw;
 }
 .coinsBox {
-  margin-left: 50vw;
+  margin-left: 49vw;
 }
 .fa-coins {
   margin-left: 1vw;
   color: #383838;
+}
+#menuToggle input:checked + .menu {
+  --value: auto;
+}
+.menu {
+  pointer-events: var(--value);
 }
 @media (min-width: 400px) {
   .mainbox {
@@ -728,7 +735,7 @@ button.class:active {
 .turnTextBox {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   color:#383838;
   font-weight: bolder;
   width: 100vw;

@@ -214,12 +214,16 @@ h2 span {
 .turnTextBox {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   color: #383838;
   font-weight: bolder;
   width: 100vw;
   height: 100vw;
 }
+.nameDiv {
+  margin-top: 1vw;
+}
+
 /*starts foldable hamburger menu */
 a {
   text-decoration: none;
@@ -288,7 +292,6 @@ a:hover {
 #menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
-
 /* 
  * Transform all the slices of hamburger
  * into a crossmark.
@@ -327,7 +330,6 @@ a:hover {
   padding-top: 125px;
   right: -10vw;
   border-radius: 0 0 0 5px;
-
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -338,7 +340,9 @@ a:hover {
 
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
-
+#showTabMenu {
+  display: block;
+}
 #menu li {
   padding: 10px 0;
   font-size: 22px;
@@ -356,16 +360,15 @@ a:hover {
   #menu {
     transform: none;
     opacity: 0;
-
     transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 }
-.contactTitle{
-  width:100vw;
-  margin-bottom:5vw;
+.contactTitle {
+  width: 100vw;
+  margin-bottom: 5vw;
 }
-.phoneNumberText{
-  color:white;
+.phoneNumberText {
+  color: white;
 }
 
 @media (min-width: 700px) {

@@ -21,8 +21,8 @@
     <div class="turn">
       <div class="turnTextBox">
         <div class="turnText">
-          Gira tu móvil a como lo usas siempre para poder usar la plataforma y así
-          ayudar a los animalitos.
+          Gira tu móvil a como lo usas siempre para poder usar la plataforma y
+          así ayudar a los animalitos.
         </div>
       </div>
     </div>
@@ -33,7 +33,6 @@
             A fake / hidden checkbox is used as click reciever,
             so you can use the :checked selector on it.
             -->
-        <input type="checkbox" />
 
         <!--
             Some spans to act as a hamburger.
@@ -49,11 +48,18 @@
             Too bad the menu has to be inside of the button
             but hey, it's pure CSS magic.
             -->
+        <input
+          type="checkbox"
+          onclick="validate()"
+          id="remember"
+          name="remember"
+        />
+
         <ul id="menu">
-          <a href="#"><li>ApadrinaYa</li></a>
-          <a href="#"><li>Blog</li></a>
-          <a href="./contact.html"><li>Contacto</li></a>
-          <a href="#"><li>Política y Privacidad</li></a>
+          <a id="apadrinaLink" href="#"><li>Apadrina</li></a>
+          <a id="blogLink" href="#"><li>Blog</li></a>
+          <a id="contactLink" href="#"><li>Contacto</li></a>
+          <a id="policyLink" href="#"><li>Políticas</li></a>
         </ul>
       </div>
     </nav>
