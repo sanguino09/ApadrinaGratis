@@ -9,7 +9,6 @@ body {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
-  --value: none;
 }
 .wrapgrid {
   overflow-x: hidden;
@@ -127,7 +126,6 @@ a:hover {
 #menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
-
 /* 
  * Transform all the slices of hamburger
  * into a crossmark.
@@ -160,13 +158,12 @@ a:hover {
  */
 #menu {
   position: absolute;
-  width: 200px;
+  width: 300px;
   margin: -100px -1vw 0 0;
   padding: 50px;
   padding-top: 125px;
   right: -10vw;
   border-radius: 0 0 0 5px;
-
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -195,11 +192,9 @@ a:hover {
   #menu {
     transform: none;
     opacity: 0;
-
     transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 }
-/*ends foldable hamburger menu*/
 
 /*starts share button*/
 .mainbox {
@@ -736,7 +731,7 @@ button.class:active {
   display: flex;
   justify-content: center;
   margin-top: 3vw;
-  color:#383838;
+  color: #383838;
   font-weight: bolder;
   width: 100vw;
   height: 100vw;
