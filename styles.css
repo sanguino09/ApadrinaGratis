@@ -735,7 +735,7 @@ button.class:active {
 .turnTextBox {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  margin-top: 3vw;
   color:#383838;
   font-weight: bolder;
   width: 100vw;
