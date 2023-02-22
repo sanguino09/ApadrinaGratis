@@ -10,6 +10,8 @@ function validate() {
     document.getElementById("contactLink").removeAttribute("hidden", "");
     document.getElementById("policyLink").setAttribute("href", "./policy.html");
     document.getElementById("policyLink").removeAttribute("hidden", "");
+    document.getElementById("termsLink").setAttribute("href", "./terms.html");
+    document.getElementById("termsLink").removeAttribute("hidden", "");
   } else {
     console.log("check me out");
     document.getElementById("apadrinaLink").setAttribute("href", "#");
@@ -20,6 +22,8 @@ function validate() {
     document.getElementById("contactLink").setAttribute("hidden", "");
     document.getElementById("policyLink").setAttribute("href", "#");
     document.getElementById("policyLink").setAttribute("hidden", "");
+    document.getElementById("termsLink").setAttribute("href", "#");
+    document.getElementById("termsLink").setAttribute("hidden", "");
   }
 }
 function hideMenu(){
@@ -27,4 +31,5 @@ function hideMenu(){
     document.getElementById("blogLink").setAttribute("hidden", "");
     document.getElementById("contactLink").setAttribute("hidden", "");
     document.getElementById("policyLink").setAttribute("hidden", "");
+    document.getElementById("termsLink").setAttribute("hidden", "");
 }
