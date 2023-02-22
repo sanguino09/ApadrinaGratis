@@ -26,3 +26,9 @@ function validate() {
     document.getElementById("policyLink").setAttribute("hidden", "");
   }
 }
+function hideMenu(){
+    document.getElementById("apadrinaLink").setAttribute("hidden", "");
+    document.getElementById("blogLink").setAttribute("hidden", "");
+    document.getElementById("contactLink").setAttribute("hidden", "");
+    document.getElementById("policyLink").setAttribute("hidden", "");
+}

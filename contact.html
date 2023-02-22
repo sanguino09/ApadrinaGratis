@@ -17,12 +17,6 @@
     <title>ApadrinaGratis</title>
   </head>
   <body>
-    <script>
-      document.getElementById("apadrinaLink").setAttribute("hidden", "");
-      document.getElementById("blogLink").setAttribute("hidden", "");
-      document.getElementById("contactLink").setAttribute("hidden", "");
-      document.getElementById("policyLink").setAttribute("hidden", "");
-    </script>
     <!-- (A) THIS WILL SHOW ON THE WRONG ORIENTATION -->
     <div class="turn">
       <div class="turnTextBox">
@@ -61,10 +55,10 @@
             but hey, it's pure CSS magic.
             -->
         <ul id="menu">
-          <a hidden id="apadrinaLink" href="#"><li>Apadrina</li></a>
-          <a hidden id="blogLink" href="#"><li>Blog</li></a>
-          <a hidden id="contactLink" href="#"><li>Contacto</li></a>
-          <a hidden id="policyLink" href="#"><li>Políticas</li></a>
+          <a hidden id="apadrinaLink" href="#" onclick="hideMenu()"><li>Apadrina</li></a>
+          <a hidden id="blogLink" href="#" onclick="hideMenu()"><li>Blog</li></a>
+          <a hidden id="contactLink" href="#" onclick="hideMenu()"><li>Contacto</li></a>
+          <a hidden id="policyLink" href="#" onclick="hideMenu()"><li>Políticas</li></a>
         </ul>
       </div>
     </nav>
