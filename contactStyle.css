@@ -98,7 +98,7 @@ h2 span {
 }
 #contact address {
   border-bottom: 1px solid #505050;
-  padding-top: 30px;
+  padding-top: 5px;
 }
 #contact address .address-title {
   font-weight: bold;
@@ -219,7 +219,7 @@ h2 span {
   height: 100vw;
 }
 .nameDiv {
-  margin-top: 1vw;
+  margin-top: 2vw;
 }
 
 /*starts foldable hamburger menu */
