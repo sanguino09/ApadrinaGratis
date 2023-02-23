@@ -44,6 +44,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 -3px 3px -3px rgba(0, 0, 0, 0.4) ;
 }
 .profilePic {
   border-radius: 50%;
@@ -60,6 +61,7 @@ body {
   max-width: 800px;
   display: flex;
   justify-self: center;
+  box-shadow: 0 -3px 3px -3px rgba(0, 0, 0, 0.4) ;
 }
 
 /*starts foldable hamburger menu */
@@ -222,6 +224,7 @@ label {
   cursor: pointer;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
+  box-shadow: 3px 5px 50px 6px rgba(0,0,0,0.5);
 }
 label:hover {
   letter-spacing: 1px;
@@ -408,6 +411,7 @@ button {
   align-items: center;
   max-height: 80px;
   max-width: 350px;
+  box-shadow: 3px 5px 50px 6px rgba(0,0,0,0.5);
 }
 .playLogo {
   margin-left: 5vw;
