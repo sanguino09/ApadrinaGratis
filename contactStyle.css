@@ -69,7 +69,7 @@ h2 span {
   box-shadow: none;
   color: #fff;
   margin-top: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
 }
 .form-controlButton {
   color: #383838;
@@ -119,6 +119,9 @@ h2 span {
   margin-right: 10px;
   margin-bottom: 10px;
 }
+.addressDiv{
+  margin:0;
+}
 /* end contact */
 
 /* start social icon */
@@ -161,6 +164,7 @@ h2 span {
   }
   .address-title {
     margin-bottom: 2px;
+    margin-top: 0;
   }
 }
 /*thanks page*/
