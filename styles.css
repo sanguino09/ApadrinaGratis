@@ -499,17 +499,20 @@ button.class:active {
 .main {
   margin-top: 30px;
   background-color: #232323;
+  display: flex;
+  justify-content: center;
 }
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1vw;
   margin-top: -2vw;
+  margin-bottom: 10vh;
 }
 
 .grid img {
   width: 49.5vw;
-  max-width: 385px;
+  max-width: 350px;
   height: 30vh;
   cursor: pointer;
   transition: opacity 0.5s ease-in-out;
