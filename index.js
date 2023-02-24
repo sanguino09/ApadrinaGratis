@@ -2,7 +2,7 @@
 function validate() {
   if (document.getElementById("remember").checked) {
     console.log("checked");
-    document.getElementById("apadrinaLink").setAttribute("href", "./index.html");
+    document.getElementById("apadrinaLink").setAttribute("href", "./apadrina.html");
     document.getElementById("apadrinaLink").removeAttribute("hidden", "");
     document.getElementById("blogLink").setAttribute("href", "./blog.html");
     document.getElementById("blogLink").removeAttribute("hidden", "");
