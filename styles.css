@@ -497,7 +497,7 @@ button.class:active {
   cursor: pointer;
 }
 .main {
-  margin-top: 30px;
+  margin-top: 10px;
   background-color: #232323;
   display: flex;
   justify-content: center;
@@ -506,7 +506,7 @@ button.class:active {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1vw;
-  margin-top: -2vw;
+  margin-top: 2vw;
   margin-bottom: 10vh;
 }
 
