@@ -438,6 +438,9 @@ button.class:active {
 .fa-image {
   color: white;
 }
+#vidIcon{
+  color:#7d7d7d;
+}
 .galleryIcon {
   margin-top: 2vw;
 }
