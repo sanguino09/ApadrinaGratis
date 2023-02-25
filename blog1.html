@@ -11,6 +11,7 @@
       content="ApadrinaGratis, la plataforma con la que puedes ayudar animalitos totalmente gratis, con tan solo ver anuncios, viendo también sus fotos y vídeos especiales."
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="images/paw.ico" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
@@ -20,14 +21,81 @@
       src="https://kit.fontawesome.com/2d2b11dff3.js"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
-    <link rel="icon" href="images/paw.ico" />
+    <script src="./index.js"></script>
+    <link rel="icon" href="./images/paw.ico" />
     <title>
       ApadrinaGratis | Ayuda animales totalmente gratis, solo viendo anuncios.
     </title>
   </head>
   <body>
-    <!-- (A) THIS WILL SHOW ON THE WRONG ORIENTATION -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Lato", sans-serif;
+      }
+      .container {
+        width: 100%;
+      }
+      .container .row {
+        width: 80%;
+        margin: auto;
+      }
+      .container .row .header {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+      }
+      .container .row .header h1 {
+        padding-top: 90px;
+        font-size: 30px;
+        color: #b39c4d;
+      }
+      .container .row .header p {
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 1.5;
+        color: #6e6e6e;
+      }
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top:2vw;
+      }
+      .content .card {
+        flex: 1;
+        margin: 30px 10px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .content .card img {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px 10px 0 0;
+      }
+      .content .card h4 {
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 18px;
+      }
+      .content .card p {
+        font-size: 15px;
+        color: #6e6e6e;
+        line-height: 1.5;
+        padding: 10px;
+      }
+      @media screen and (max-width: 768px) {
+        .content {
+          flex-direction: column;
+        }
+      }
+    </style>
     <div class="turn">
       <div class="turnTextBox">
         <div class="turnText">
@@ -36,13 +104,12 @@
         </div>
       </div>
     </div>
-    <!--starts foldable hamburger menu-->
     <nav role="navigation">
       <div id="menuToggle">
         <!--
-            A fake / hidden checkbox is used as click reciever,
-            so you can use the :checked selector on it.
-            -->
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
         <input
           type="checkbox"
           onclick="validate()"
@@ -51,19 +118,19 @@
         />
 
         <!--
-            Some spans to act as a hamburger.
-            
-            They are acting like a real hamburger,
-            not that McDonalds stuff.
-            -->
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
         <span></span>
         <span></span>
         <span></span>
 
         <!--
-            Too bad the menu has to be inside of the button
-            but hey, it's pure CSS magic.
-            -->
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
         <ul id="menu">
           <a hidden id="apadrinaLink" href="#" onclick="hideMenu()"
             ><li>Apadrina <i class="fa-solid fa-paw"></i></li
@@ -83,135 +150,61 @@
         </ul>
       </div>
     </nav>
-    <!--ends foldable hamburger menu-->
-    <div class="parent">
-      <!--profile pic-->
-      <div class="div1">
-        <div class="circle">
-          <img class="profilePic" alt="fotoUsuario" src="images/xtrauss.webp" />
-        </div>
-      </div>
-      <!--ends profile pic-->
-      <div class="div2">
-        <div class="upperButtons">
-          <!--starts share button-->
-          <div class="mainbox">
-            <input type="checkbox" id="check" />
-            <label for="check"
-              ><i class="share fa-solid fa-share-alt fa-1x"></i
-            ></label>
-            <div class="media-icons">
-              <a
-                target="blank"
-                rel="noopener noreferrer"
-                href="https://www.facebook.com/sharer.php?u=https://www.apadrinagratis.com/"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a
-                target="blank"
-                rel="noopener noreferrer"
-                href="https://twitter.com/share?url=https://www.apadrinagratis.com/&text=Apadrina animales gratis, apoya a los refugios viendo anuncios y desbloqueando videos y fotos de los animalitos.&hashtags=animales,apadrinar,gratis,cuidar"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a
-                target="blank"
-                rel="noopener noreferrer"
-                href="https://api.whatsapp.com/send?text=Apadrina refugios de animales totalmente gratis tan solo viendo anuncios https://www.apadrinagratis.com/"
-                ><i class="fab fa-whatsapp"></i
-              ></a>
-            </div>
+    <!--hamburger menu ends-->
+    <div class="container">
+        <div class="row">
+          <div class="header">
+            <h1>El lanzamiento de ApadrinaGratis</h1><p>
+                <span style="font-size: 12px;">25/02/2023 -- Alejandro</span><br>
+               La plataforma gratuita para apoyar a los refugios, ¡apadrina o amadrina y aporta a este bellísima comunidad!<br>
+            </p>
           </div>
+          <div class="content">
+            <style>
+                .container {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center
+                }
+                img {
+                  width:30vw;
+                  height:30vw;
+                }
+                .image {
+                  flex-basis: 40%
+                }
+                .text {
+                  font-size: 10px;
+                  padding-left: 20px;
+                }
+                @media (max-width:500px){
 
-          <!--ends share button-->
-          <!--starts bell alarm-->
-          <div class="bellAlarm">
-            <i class="fa-solid fa-bell fa-2x"></i>
+                    .container{
+                        flex-direction: column;
+                    }
+                    img{
+                        width:50vw;
+                        height: 50vw;
+                        margin-bottom:2vw;
+                    }
+                    .container .row{
+                        width:95vw;
+                    }
+                }
+              </style>
+            </head>
+            <body>
+              <div class="container">
+                <div class="image">
+                  <img src="https://i.pinimg.com/originals/26/ea/fc/26eafc0b14488fea03fa8fa9751203ff.jpg">
+                </div>
+                <div class="text">
+                  <h1>La plataforma que sirve como refugio para los refugios, ayudando económicamente a todos los que salvan las tan preciadas vidas de los animales gracias a que sus seguidores vean anuncios que no cuestan nada.</h1>
+                </div>
+              </div>
           </div>
         </div>
-        <!--ends bell alarm-->
-        <div class="shelterName">Xtrauss | Refugio Animal</div>
-        <div class="shelterDescriptionBox">
-          <div class="shelterDescription">
-            Refugio exótico, cuidamos de los más indefensos, desde iguanas hasta
-            tortugas afrodisiacas, pasando por tarántulas y todo lo que puedas
-            imaginar.
-          </div>
-        </div>
-        <!--
-        <div class="sponsorButtonDiv">
-          <button class="sponsorButton">
-            <div class="sponsorButtonText">Apadrina</div>
-            <i class="playLogo fa fa-play fa-2x"></i>
-          </button>
-        </div>
-        <div class="galleryDiv">
-          <div class="gallery">
-            <div class="modal">
-              <button class="btn">X</button>
-            </div>-->
-        <!--starts gallery-->
-        <!--gallery icon and white bar-->
-        <div class="galleryIconBox">
-          <div class="galleryIcon">
-            <i
-              onclick="imgSwitch()"
-              id="imgIcon"
-              class="fa-solid fa-image fa-lg"
-            >
-              <i
-                style="margin-left: 30vw"
-                id="vidIcon"
-                class="fa-solid fa-video"
-              >
-              </i>
-            </i>
-          </div>
-          <div class="barUnderBox">
-            <div onclick="imgSwitch()" id="images"></div>
-            <div onclick="imgSwitch()" id="video"></div>
-          </div>
-        </div>
-        <!--gallery-->
-        <section class="main">
-          <div class="grid">
-            <img class="images-left" src="images/gecko.webp" alt="animalito" />
-            <img class="images-right" src="images/tula.webp" alt="animalito" />
-            <img
-              class="images-left"
-              src="images/milpies.webp"
-              alt="animalito"
-            />
-            <img
-              class="images-right"
-              src="images/iguana.webp"
-              alt="animalito"
-            />
-            <img
-              class="images-left"
-              src="images/serpiente.webp"
-              alt="animalito"
-            />
-            <img
-              class="images-right"
-              src="images/tortuga.webp"
-              alt="animalito"
-            />
-            <img class="images-left" src="images/tula.webp" alt="animalito" />
-            <img
-              class="images-right"
-              src="images/milpies.webp"
-              alt="animalito"
-            />
-            <img class="images-left" src="images/iguana.webp" alt="animalito" />
-            <img class="images-right" src="images/gecko.webp" alt="animalito" />
-          </div>
-        </section>
-      </div>
-      <div class="footer">
-        <div class="appName"><i class="fa-solid fa-paw"></i>ApadrinaGratis</div>
-        <div class="coinsBox">500<i class="fa-solid fa-coins"></i></div>
-      </div>
-    </div>
+    <!--div escondido para rellenar con palabras-->
     <div hidden>
       Este div esta para realizar pruebas de SEO y posicionamiento, comprobando
       si el número de palabras es realmente útil y necesario para la calidad de

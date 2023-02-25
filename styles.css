@@ -325,7 +325,6 @@ label::before {
 
 .shelterName {
   width: auto;
-  margin-top: -10px;
   color: white;
   font-weight: bolder;
   font-size: large;
@@ -438,8 +437,8 @@ button.class:active {
 .fa-image {
   color: white;
 }
-#vidIcon{
-  color:#7d7d7d;
+#vidIcon {
+  color: #7d7d7d;
 }
 .galleryIcon {
   margin-top: 2vw;
@@ -463,12 +462,14 @@ button.class:active {
   height: 1vw;
   border-radius: 5vw;
   width: 30vw;
+  max-height:10px;
 }
-#images  {
+#images {
   background-color: white;
   height: 1vw;
   border-radius: 5vw;
   width: 30vw;
+  max-height:10px;
 }
 .galleryIcon {
   display: flex;
@@ -512,7 +513,7 @@ button.class:active {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1vw;
-  margin-top: 2vw;
+  margin-top: 3vw;
   margin-bottom: 10vh;
 }
 
