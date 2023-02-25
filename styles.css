@@ -455,14 +455,17 @@ button.class:active {
   flex-direction: row;
   justify-content: center;
 }
-.bar {
-  background-color: white;
+#video {
+  background-color: #232323;
   height: 1vw;
   border-radius: 5vw;
   width: 30vw;
 }
-.video {
-  background-color: #232323;
+#images  {
+  background-color: white;
+  height: 1vw;
+  border-radius: 5vw;
+  width: 30vw;
 }
 .galleryIcon {
   display: flex;

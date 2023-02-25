@@ -1,8 +1,7 @@
-
 function validate() {
   if (document.getElementById("remember").checked) {
     console.log("checked");
-    document.getElementById("apadrinaLink").setAttribute("href", "./apadrina.html");
+    document.getElementById("apadrinaLink").setAttribute("href", "./index.html");
     document.getElementById("apadrinaLink").removeAttribute("hidden", "");
     document.getElementById("blogLink").setAttribute("href", "./blog.html");
     document.getElementById("blogLink").removeAttribute("hidden", "");
@@ -26,10 +25,32 @@ function validate() {
     document.getElementById("termsLink").setAttribute("hidden", "");
   }
 }
-function hideMenu(){
-    document.getElementById("apadrinaLink").setAttribute("hidden", "");
-    document.getElementById("blogLink").setAttribute("hidden", "");
-    document.getElementById("contactLink").setAttribute("hidden", "");
-    document.getElementById("policyLink").setAttribute("hidden", "");
-    document.getElementById("termsLink").setAttribute("hidden", "");
+function hideMenu() {
+  document.getElementById("apadrinaLink").setAttribute("hidden", "");
+  document.getElementById("blogLink").setAttribute("hidden", "");
+  document.getElementById("contactLink").setAttribute("hidden", "");
+  document.getElementById("policyLink").setAttribute("hidden", "");
+  document.getElementById("termsLink").setAttribute("hidden", "");
+}
+
+let img = true;
+function imgSwitch() {
+  console.log("hola");
+  if (img == true) {
+    document
+      .getElementById("images")
+      .setAttribute("style", "background-color:#232323");
+    document
+      .getElementById("video")
+      .setAttribute("style", "background-color:white");
+    img = false;
+  } else {
+    document
+      .getElementById("images")
+      .setAttribute("style", "background-color:white");
+    document
+      .getElementById("video")
+      .setAttribute("style", "background-color:#232323");
+    img = true;
+  }
 }
