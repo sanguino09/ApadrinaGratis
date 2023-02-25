@@ -708,6 +708,12 @@ button.class:active {
   .coinsBox {
     margin-left: 60vw;
   }
+  #images {
+    border: 0;
+  }
+  #video {
+    border: 0;
+  }
 }
 @media (min-width: 1500px) {
   #menu {
