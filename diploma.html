@@ -29,6 +29,15 @@
   </head>
   <body>
     <style>
+      canvas#confetti {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 1000;
+        pointer-events: none;
+      }
       @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
       * {
         margin: 0px;
@@ -40,6 +49,7 @@
         background-color: #383838;
         color: white;
         text-align: center;
+        overflow-y: hidden;
       }
       .container {
         width: 100%;
@@ -53,7 +63,7 @@
       }
       .container .diplomaBox {
         width: 30%;
-        height: 90vh;
+        height: 87vh;
         margin-top: 9vh;
         color: #383838;
         background-color: white;
@@ -67,7 +77,8 @@
       .diplomaImage {
         width: 100%;
         max-width: 400px;
-        height: 75vh;
+        height: 72vh;
+        border-radius: 20px;
       }
       .diplomaBody {
         width: 100%;
@@ -130,13 +141,65 @@
         }
         .container .diplomaBox {
           width: 90vw;
-          border-radius: 0 0 20px 20px;
         }
         .diplomaBBR {
           visibility: hidden;
         }
+        #menuToggle span {
+          background-color: white;
+        }
+      }
+      .mainbox {
+        position: absolute;
+        left: 6px;
+        top: 3px;
+      }
+      #check:checked ~ .media-icons {
+        opacity: 1;
+        pointer-events: auto;
+        top: -5px;
+        left: 140px;
+        background-color: #fff;
+      }
+      .fa-facebook,
+      .fa-whatsapp,
+      .fa-twitter {
+        color: #383838;
+      }
+      .media-icons::before {
+        background-color: #fff;
+        left: 5%;
+        top: 20px;
+      }
+      #my-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100000;
+        /*visibility: hidden;*/
+      }
+      #my-canvas.active {
+        visibility: hidden;
       }
     </style>
+    <canvas id="my-canvas"></canvas>
+    <script src="./index.min.js"></script>
+    <script>
+      let confe = document.querySelector("#my-canvas");
+      /*window.onload = (event) => {
+        confe.classList.add("active");
+        console.log("page is fully loaded");
+      };*/
+      var confettiSettings = { target: "my-canvas" };
+      var confetti = new ConfettiGenerator(confettiSettings);
+      confetti.render();
+      setTimeout(() => {
+        document.getElementById("my-canvas").setAttribute("hidden", "");
+}, 3000)
+    </script>
+
     <div class="turn">
       <div class="turnTextBox">
         <div class="turnText">
@@ -145,6 +208,35 @@
         </div>
       </div>
     </div>
+    <!--starts share button-->
+    <div class="mainbox">
+      <input type="checkbox" id="check" />
+      <label for="check"
+        ><i class="share fa-solid fa-share-alt fa-1x"></i
+      ></label>
+      <div class="media-icons">
+        <a
+          target="blank"
+          rel="noopener noreferrer"
+          href="https://www.facebook.com/sharer.php?u=https://www.apadrinagratis.com/"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          target="blank"
+          rel="noopener noreferrer"
+          href="https://twitter.com/share?url=https://www.apadrinagratis.com/&text=Apadrina animales gratis, apoya a los refugios viendo anuncios y desbloqueando videos y fotos de los animalitos.&hashtags=animales,apadrinar,gratis,cuidar"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          target="blank"
+          rel="noopener noreferrer"
+          href="https://api.whatsapp.com/send?text=Apadrina refugios de animales totalmente gratis tan solo viendo anuncios https://www.apadrinagratis.com/"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+    </div>
+
+    <!--ends share button-->
     <nav role="navigation">
       <div id="menuToggle">
         <!--
@@ -194,7 +286,6 @@
     <!--hamburger menu ends-->
     <div class="container">
       <div class="diplomaBox">
-        
         <div class="diplomaBody">
           <div>
             <a
@@ -209,6 +300,10 @@
             /></a>
           </div>
           <p style="font-size: 15px">(Toca la foto para descargarla)</p>
+          <p style="font-size: 18px">
+            <br />¡Compártela por Instagram y otras redes para que los demás
+            también se unan a la causa!.
+          </p>
         </div>
       </div>
     </div>
