@@ -23,14 +23,16 @@
       ApadrinaGratis | Ayuda animales totalmente gratis, solo viendo anuncios.
     </title>
   </head>
-  <body
-    style="
-      text-align: center;
-      overflow-x: hidden;
-      display: flex;
-      justify-content: center;
-    "
-  >
+  <body style="overflow-x: hidden; display: flex; justify-content: center">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Lato", sans-serif;
+      }
+    </style>
     <!--starts foldable hamburger menu-->
     <nav role="navigation">
       <div id="menuToggle">
@@ -73,17 +75,21 @@
             ><li>Términos y condiciones</li></a
           >
           <a hidden id="blogLink" href="#" onclick="hideMenu()"
-            ><li>Blog</li></a
-          >
+            ><li>Blog <i class="fa fa-book"></i></li
+          ></a>
         </ul>
       </div>
     </nav>
     <!--ends foldable hamburger menu-->
-    <div style="width: 80vw">
+    <div style="width: 80vw; line-height:2;">
       <span></span>
-      <h2 style="font-size: 30px"><strong>Términos y Condiciones</strong></h2>
-
-      <p>Bienvenido ApadrinaGratis!</p>
+      <h2 style="font-size: 30px; text-align: center">
+        <strong>Términos y Condiciones</strong>
+      </h2>
+      <br />
+      <p style="text-align: center; font-size: 22px">
+        <strong>Bienvenido ApadrinaGratis!</strong>
+      </p>
 
       <p>
         Estos términos y condiciones describen las normas y reglamentos de uso
@@ -114,8 +120,8 @@
         y/o él/ella o ellos, se consideran intercambiables y, por tanto, se
         refieren a lo mismo.
       </p>
-
-      <h3><strong>Cookies</strong></h3>
+      <br />
+      <h3 style="text-align: center"><strong>Cookies</strong></h3>
 
       <p>
         Utilizamos cookies. Al acceder a ApadrinaGratis, usted acepta el uso de
@@ -129,8 +135,8 @@
         y facilitar así la visita a nuestro sitio web. Algunos de nuestros
         socios afiliados/publicitarios también pueden utilizar cookies.
       </p>
-
-      <h3><strong>Licencia</strong></h3>
+      <br />
+      <h3 style="text-align: center"><strong>Licencia</strong></h3>
 
       <p>
         A menos que se indique lo contrario, ApadrinaGratis y / o sus
@@ -141,16 +147,18 @@
         términos y condiciones.
       </p>
 
-      <p>Usted no debe:</p>
+      <p style="text-align: center">Usted no debe:</p>
       <ul>
         <li>Volver a publicar material de ApadrinaGratis</li>
         <li>Vender, alquilar o sublicenciar material de ApadrinaGratis</li>
         <li>Reproducir, duplicar o copiar material de ApadrinaGratis</li>
         <li>Redistribuir contenido de ApadrinaGratis</li>
       </ul>
-
-      <p>El presente Acuerdo entrará en vigor en la fecha del mismo.</p>
-
+      <br />
+      <p style="text-align: center">
+        El presente Acuerdo entrará en vigor en la fecha del mismo.
+      </p>
+      <br />
       <p>
         Algunas partes de este sitio web ofrecen a los usuarios la oportunidad
         de publicar e intercambiar opiniones e información en ciertas áreas del
@@ -164,14 +172,14 @@
         gastos causados y / o sufridos como resultado de cualquier uso y / o
         publicación y / o aparición de los comentarios en este sitio web.
       </p>
-
+      <br />
       <p>
         ApadrinaGratis se reserva el derecho de supervisar todos los Comentarios
         y de eliminar cualquier Comentario que pueda ser considerado
         inapropiado, ofensivo o que infrinja estos Términos y Condiciones.
       </p>
-
-      <p>Usted garantiza y declara que:</p>
+      <br />
+      <p style="text-align: center">Usted garantiza y declara que:</p>
 
       <ul>
         <li>
@@ -195,13 +203,15 @@
       </ul>
 
       <p>
-        YPor la presente, usted concede a ApadrinaGratis una licencia no
+        Y por la presente, usted concede a ApadrinaGratis una licencia no
         exclusiva para utilizar, reproducir, editar y autorizar a otros a
         utilizar, reproducir y editar cualquiera de sus Comentarios en todas y
         cada una de las formas, formatos o medios de comunicación.
       </p>
-
-      <h3><strong>Hiperenlaces a nuestro contenido</strong></h3>
+      <br />
+      <h3 style="text-align: center">
+        <strong>Hiperenlaces a nuestro contenido</strong>
+      </h3>
 
       <p>
         Las siguientes organizaciones pueden enlazar con nuestro sitio web sin
@@ -224,7 +234,7 @@
           sitio web.
         </li>
       </ul>
-
+      <br />
       <p>
         Estas organizaciones pueden enlazar con nuestra página de inicio, con
         publicaciones o con otra información del sitio web siempre que el enlace
@@ -233,7 +243,7 @@
         y/o servicios; y (c) se ajuste al contexto del sitio de la parte
         enlazante.
       </p>
-
+      <br />
       <p>
         Podemos considerar y aprobar otras solicitudes de enlaces de los
         siguientes tipos de organizaciones:
@@ -254,7 +264,7 @@
         <li>empresas de contabilidad, abogacía y consultoría; y</li>
         <li>instituciones educativas y asociaciones comerciales.</li>
       </ul>
-
+      <br />
       <p>
         Aprobaremos las solicitudes de enlace de estas organizaciones si
         decidimos que (a) el enlace no nos haría quedar mal con nosotros mismos
@@ -272,7 +282,7 @@
         sus productos o servicios; y (c) se ajuste al contexto del sitio de la
         parte enlazante.
       </p>
-
+      <br />
       <p>
         Si usted es una de las organizaciones enumeradas en el apartado 2
         anterior y está interesado en establecer un enlace con nuestro sitio
@@ -283,7 +293,7 @@
         nuestro sitio web a las que le gustaría enlazar. Espere 2-3 semanas a
         recibir una respuesta.
       </p>
-
+      <br />
       <p>
         Las organizaciones autorizadas pueden establecer hiperenlaces con
         nuestro sitio web de la siguiente manera:
@@ -307,16 +317,18 @@
         ilustraciones para establecer enlaces sin un acuerdo de licencia de
         marca comercial.
       </p>
-
-      <h3><strong>iFrames</strong></h3>
+      <br />
+      <h3 style="text-align: center"><strong>iFrames</strong></h3>
 
       <p>
         Sin previa aprobación y autorización por escrito, no podrá crear marcos
         alrededor de nuestras Páginas Web que alteren en modo alguno la
         presentación visual o el aspecto de nuestro Sitio Web.
       </p>
-
-      <h3><strong>Responsabilidad por contenidos</strong></h3>
+      <br />
+      <h3 style="text-align: center">
+        <strong>Responsabilidad por contenidos</strong>
+      </h3>
 
       <p>
         No seremos responsables de ningún contenido que aparezca en su sitio
@@ -326,12 +338,12 @@
         delictivos, o que infrinjan, violen de otro modo o propugnen la
         infracción u otra violación de los derechos de terceros.
       </p>
+      <br />
+      <h3 style="text-align: center"><strong>Tu privacidad</strong></h3>
 
-      <h3><strong>Tu privacidad</strong></h3>
-
-      <p>Lea la Política de privacidad</p>
-
-      <h3><strong>Reserva de derechos</strong></h3>
+      <p style="text-align: center">Lea la Política de privacidad.</p>
+      <br />
+      <h3 style="text-align: center"><strong>Reserva de derechos</strong></h3>
 
       <p>
         Nos reservamos el derecho a solicitarle que elimine todos los enlaces o
@@ -342,8 +354,10 @@
         continuamente a nuestro sitio web, usted acepta estar obligado a cumplir
         estos términos y condiciones de enlace.
       </p>
-
-      <h3><strong>Eliminación de enlaces de nuestro sitio web</strong></h3>
+      <br />
+      <h3 style="text-align: center">
+        <strong>Eliminación de enlaces de nuestro sitio web</strong>
+      </h3>
 
       <p>
         Si encuentra algún enlace en nuestro Sitio Web que le resulte ofensivo
@@ -359,8 +373,8 @@
         prometemos que el sitio web siga estando disponible ni que el material
         que contiene se mantenga actualizado.
       </p>
-
-      <h3><strong>Disclaimer</strong></h3>
+      <br />
+      <h3 style="text-align: center"><strong>Disclaimer</strong></h3>
 
       <p>
         En la medida máxima permitida por la ley aplicable, excluimos todas las
@@ -387,7 +401,7 @@
           puedan excluirse en virtud de la legislación aplicable.
         </li>
       </ul>
-
+      <br />
       <p>
         Las limitaciones y prohibiciones de responsabilidad establecidas en esta
         sección y en otras partes de esta cláusula de exención de
@@ -402,6 +416,8 @@
         él se ofrecen son gratuitos, no seremos responsables de ninguna pérdida
         o daño de cualquier naturaleza.
       </p>
+      <br />
+      <br />
     </div>
   </body>
 </html>

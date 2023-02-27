@@ -23,14 +23,16 @@
       ApadrinaGratis | Ayuda animales totalmente gratis, solo viendo anuncios.
     </title>
   </head>
-  <body
-    style="
-      text-align: center;
-      overflow-x: hidden;
-      display: flex;
-      justify-content: center;
-    "
-  >
+  <body style="overflow-x: hidden; display: flex; justify-content: center">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Lato", sans-serif;
+      }
+    </style>
     <!--starts foldable hamburger menu-->
     <nav role="navigation">
       <div id="menuToggle">
@@ -73,15 +75,17 @@
             ><li>Términos y condiciones</li></a
           >
           <a hidden id="blogLink" href="#" onclick="hideMenu()"
-            ><li>Blog</li></a
-          >
+            ><li>Blog <i class="fa fa-book"></i></li
+          ></a>
         </ul>
       </div>
     </nav>
     <!--ends foldable hamburger menu-->
-    <div style="width: 80vw">
+    <div style="width: 80vw; line-height: 2">
       <span></span>
-      <h1 style="font-size: 30px">Política de <br>privacidad</h1>
+      <h1 style="font-size: 30px; text-align: center">
+        Política de <br />privacidad
+      </h1>
 
       <p>
         En ApadrinaGratis, accesible desde https://www.apadrinagratis.com, una
@@ -103,15 +107,15 @@
         política no es aplicable a cualquier información recogida fuera de línea
         o a través de canales distintos de este sitio web.
       </p>
-
-      <h2>Consentimiento</h2>
+      <br />
+      <h2 style="text-align: center">Consentimiento</h2>
 
       <p>
         Al utilizar nuestro sitio web, usted acepta nuestra Política de
         Privacidad y está de acuerdo con sus términos.
       </p>
-
-      <h2>Información que recopilamos</h2>
+      <br />
+      <h2 style="text-align: center">Información que recopilamos</h2>
 
       <p>
         La información personal que se le pide que proporcione, y las razones
@@ -133,7 +137,7 @@
         de correo electrónico y número de teléfono.
       </p>
 
-      <h2>Cómo utilizamos su información</h2>
+      <h2 style="text-align: center">Cómo utilizamos su información</h2>
       <p>
         Utilizamos la información que recopilamos de varias maneras, entre ellas
         para:
@@ -158,7 +162,7 @@
         <li>Detectar y prevenir el fraude</li>
       </ul>
 
-      <h2>Archivos de registro</h2>
+      <h2 style="text-align: center">Archivos de registro</h2>
 
       <p>
         ApadrinaGratis sigue un procedimiento estándar de uso de archivos de
@@ -173,8 +177,8 @@
         es analizar tendencias, administrar el sitio, rastrear el movimiento de
         los usuarios en el sitio web y recopilar información demográfica.
       </p>
-
-      <h2>Cookies y balizas web</h2>
+      <br />
+      <h2 style="text-align: center">Cookies y balizas web</h2>
 
       <p>
         Como cualquier otro sitio web, ApadrinaGratis utiliza 'cookies'. Estas
@@ -185,8 +189,8 @@
         contenido de nuestra página web en función del tipo de navegador de los
         visitantes y/u otra información.
       </p>
-
-      <h2>Cookie DART de DoubleClick de Google</h2>
+      <br />
+      <h2 style="text-align: center">Cookie DART de DoubleClick de Google</h2>
 
       <p>
         Google es uno de los proveedores externos de nuestro sitio web. También
@@ -200,8 +204,8 @@
           >https://policies.google.com/technologies/ads</a
         >
       </p>
-
-      <h2>Nuestros socios publicitarios</h2>
+      <br />
+      <h2 style="text-align: center">Nuestros socios publicitarios</h2>
 
       <p>
         Algunos de los anunciantes de nuestro sitio pueden utilizar cookies y
@@ -221,8 +225,10 @@
           </p>
         </li>
       </ul>
-
-      <h2>Políticas de privacidad de los socios publicitarios</h2>
+      <br />
+      <h2 style="text-align: center">
+        Políticas de privacidad de los socios publicitarios
+      </h2>
 
       <p>
         Puede consultar esta lista para encontrar la Política de Privacidad de
@@ -244,8 +250,8 @@
         Tenga en cuenta que ApadrinaGratis no tiene acceso ni control sobre
         estas cookies que son utilizadas por los anunciantes de terceros.
       </p>
-
-      <h2>Políticas de Privacidad de Terceros</h2>
+      <br />
+      <h2 style="text-align: center">Políticas de Privacidad de Terceros</h2>
 
       <p>
         La Política de Privacidad de ApadrinaGratis no se aplica a otros
@@ -262,8 +268,10 @@
         sobre la gestión de cookies con navegadores web específicos, puede
         encontrarse en los sitios web respectivos de los navegadores.
       </p>
-
-      <h2>Derechos de privacidad CCPA (No vender mi información personal)</h2>
+      <br />
+      <h2 style="text-align: center">
+        Derechos de privacidad CCPA (No vender mi información personal)
+      </h2>
 
       <p>
         En virtud de la CCPA, entre otros derechos, los consumidores de
@@ -286,8 +294,8 @@
         Si presenta una solicitud, tenemos un mes para responderle. Si desea
         ejercer alguno de estos derechos, póngase en contacto con nosotros.
       </p>
-
-      <h2>Derechos de protección de datos GDPR</h2>
+      <br />
+      <h2 style="text-align: center">Derechos de protección de datos GDPR</h2>
 
       <p>
         Queremos asegurarnos de que conoce perfectamente todos sus derechos en
@@ -326,8 +334,8 @@
         desea ejercer alguno de estos derechos, póngase en contacto con
         nosotros.
       </p>
-
-      <h2>Información para niños</h2>
+      <br />
+      <h2 style="text-align: center">Información para niños</h2>
 
       <p>
         Otra parte de nuestra prioridad es añadir protección para los niños
@@ -342,6 +350,7 @@
         inmediatamente y haremos todo lo posible para eliminar rápidamente dicha
         información de nuestros registros.
       </p>
+      <br /><br />
     </div>
   </body>
 </html>

@@ -29,6 +29,18 @@
   </head>
   <body>
     <style>
+      .footer {
+        bottom: -9px;
+        height: 4vh;
+        width: 100vw;
+        font-size: 12px;
+        position: relative;
+        background-color: #383838;
+        color: white;
+        font-weight: lighter;
+        display: flex;
+        justify-content: center;
+      }
       @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
       * {
         margin: 0px;
@@ -44,13 +56,13 @@
         margin: auto;
       }
       .container .row .header {
-        width: auto;
+        width: 80%;
         text-align: center;
         margin: auto;
       }
       .container .row .header h1 {
-        padding-top: 30px;
-        font-size: 45px;
+        padding-top: 90px;
+        font-size: 30px;
         color: #b39c4d;
       }
       .container .row .header p {
@@ -64,6 +76,7 @@
         justify-content: center;
         align-items: center;
         margin: auto;
+        margin-top: 2vw;
       }
       .content .card {
         flex: 1;
@@ -135,8 +148,8 @@
             ><li>Apadrina <i class="fa-solid fa-paw"></i></li
           ></a>
           <a hidden id="contactLink" href="#" onclick="hideMenu()"
-            ><li>Contacta</li></a
-          >
+            ><li>Contacta <i class="fa-solid fa-address-book"></i></li
+          ></a>
           <a hidden id="policyLink" href="#" onclick="hideMenu()"
             ><li>Política de Privacidad</li></a
           >
@@ -144,8 +157,8 @@
             ><li>Términos y condiciones</li></a
           >
           <a hidden id="blogLink" href="#" onclick="hideMenu()"
-            ><li>Blog <i class="fa fa-book"></i></li></a
-          >
+            ><li>Blog <i class="fa fa-book"></i></li
+          ></a>
         </ul>
       </div>
     </nav>
@@ -153,62 +166,96 @@
     <div class="container">
       <div class="row">
         <div class="header">
-          <h1>Blog</h1>
+          <h1>¿Cómo preparé la plataforma?</h1>
           <p>
-            Dedicado a los acontecimientos y noticias más relevantes sobre la
-            plataforma, el apadrinamiento y los animales de todo el mundo.
+            <span style="font-size: 12px">27/02/2023 -- Alejandro</span><br />
+            El camino para montar una nueva idea es muy bonito, pero todo tiene
+            su esfuerzo.<br />
           </p>
         </div>
         <div class="content">
-          <div class="card">
-            <img src="images/templowasa.png" alt="animalito" />
-            <h4>¡Se lanza ApadrinaGratis!</h4>
-            <p>
-              Primer post del sitio, inaugurando la plataforma y sus primeras
-              pruebas. <br /><br /><br />
-              <a style="color: #b39c4d" href="./blog1.html"
-                >Haz click para leer más</a
-              >
-            </p>
-          </div>
-          <div class="card">
-            <img src="images/idea.jpg" alt="animalito" />
-            <h4>¿Cómo lo hice?</h4>
-            <p>
-              El camino para montar una nueva idea es muy bonito, pero todo
-              tiene su esfuerzo.<br /><br />
-              <a style="color: #b39c4d" href="./blog2.html"
-                >Haz click para leer más</a
-              >
-            </p>
-          </div>
-          <div class="card">
-            <img src="images/kevin.jpg" alt="animalito" />
-            <h4>Blog Post 3</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              incidunt cupiditate excepturi.
-              <br /><br />
-              <a style="color: #b39c4d" href="./blog3.html"
-                >Haz click para leer más</a
-              >
-            </p>
-          </div>
-          <div class="card">
-            <img src="images/tommy.jpg" alt="animalito" />
-            <h4>Blog Post 4</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              incidunt cupiditate excepturi.
-              <br /><br />
-              <a style="color: #b39c4d" href="./blog4.html"
-                >Haz click para leer más</a
-              >
-            </p>
+          <style>
+            .container {
+              display: flex;
+              justify-content: center;
+            }
+            img {
+              width: 30vw;
+              height: 30vw;
+            }
+            .image {
+              flex-basis: 40%;
+              display: flex;
+              justify-content: center;
+            }
+            .text {
+              font-size: 10px;
+              padding-left: 20px;
+            }
+            @media (max-width: 500px) {
+              .container {
+                flex-direction: column;
+              }
+              img {
+                width: 50vw;
+                height: 50vw;
+                margin-bottom: 2vw;
+              }
+              .container .row {
+                width: 95vw;
+              }
+            }
+          </style>
+
+          <div class="container">
+            <div class="image">
+              <img src="./images/idea.jpg" />
+            </div>
+            <div class="text" style="line-height: 1.5">
+              <h2>
+                La verdad es que vengo de un mundo bastante distante a este, yo
+                me estoy formando como ingeniero aeroespacial, estoy en mi
+                tercer año de un total de cuatro, pero siempre me apasionó
+                crear.<br /><br />
+                Después de un cursillo de programación puse todo mi foco de
+                atención a pensar en qué podría invertir mis nuevos
+                conocimientos, así que después de algunas charlas conmigo mismo
+                y contra el espejo llegué a que podría desarrollar una
+                plataforma para ayudar a los demás.<br /><br />El cómo llegué a
+                los animales es tema de otra publicación. Siguiendo con el
+                proceso que tuve durante la creación de ApadrinaGratis tenemos
+                que yo llegué a un punto idílico, como al que llegan todos los
+                emprendedores novicios.<br /><br />
+                A partir de la idea de ayudar a los que ayudan a los animales
+                debía ahondar en lo que realmente importaba, el cómo lo haría.
+                Ya que el papel lo aguanta todo me puse a garabatear varios
+                bocetos y propuestas de valor para sopesar cuál sería el camino
+                a seguir.<br /><br />
+                Una vez tuve la estrategia inicial, la columna vertebral de la
+                plataforma, investigué qué sería necesario para lograr cada uno
+                de los campos que abarcaba. De cada problema que resolvía salían
+                otros tres más, fue agotador el hecho de ver tan cerca la meta y
+                sin embargo estar cada vez más lejos.<br /><br />
+                No obstante, ese mismo sentimiento de insatisfacción lo
+                aproveché para perfilar al máximo la estructura, el cómo me
+                acercaría a la gente y cómo interactuarían ellos para apoyar ha
+                sido el apartado que más ha cambiado y seguirá cambiando, pues
+                no paro de actualizarlo constantemente, pues todo siempre puede
+                ser mejor.<br><br>
+              </h2>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="footer">
+      <div class="footerText">
+        <i class="fa-solid fa-paw"></i
+        >ApadrinaGratis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2023&#169; All
+        rights reserved.
+      </div>
+    </div>
+    <!--div escondido para rellenar con palabras-->
     <div hidden>
       Este div esta para realizar pruebas de SEO y posicionamiento, comprobando
       si el número de palabras es realmente útil y necesario para la calidad de
