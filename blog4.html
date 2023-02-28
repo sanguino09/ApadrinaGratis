@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="ApadrinaGratis. Apadrinar. Gratis. Ayudar. Animales. Anuncios. Plataforma."
+    />
+    <meta
+      name="description"
+      content="ApadrinaGratis, la plataforma con la que puedes ayudar animalitos totalmente gratis, con tan solo ver anuncios, viendo también sus fotos y vídeos especiales."
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="images/paw.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2d2b11dff3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+    <link rel="icon" href="./images/paw.ico" />
+    <title>
+      ApadrinaGratis | Ayuda animales totalmente gratis, solo viendo anuncios.
+    </title>
+  </head>
+  <body>
+    <style>
+      .footer {
+        bottom: -9px;
+        height: 4vh;
+        width: 100vw;
+        font-size: 12px;
+        position: relative;
+        background-color: #383838;
+        color: white;
+        font-weight: lighter;
+        display: flex;
+        justify-content: center;
+      }
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Lato", sans-serif;
+      }
+      .container {
+        width: 100%;
+      }
+      .container .row {
+        width: 80%;
+        margin: auto;
+      }
+      .container .row .header {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+      }
+      .container .row .header h1 {
+        padding-top: 90px;
+        font-size: 30px;
+        color: #b39c4d;
+      }
+      .container .row .header p {
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 1.5;
+        color: #6e6e6e;
+      }
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 2vw;
+      }
+      .content .card {
+        flex: 1;
+        margin: 30px 10px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .content .card img {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px 10px 0 0;
+      }
+      .content .card h4 {
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 18px;
+      }
+      .content .card p {
+        font-size: 15px;
+        color: #6e6e6e;
+        line-height: 1.5;
+        padding: 10px;
+      }
+      @media screen and (max-width: 768px) {
+        .content {
+          flex-direction: column;
+        }
+      }
+    </style>
+    <div class="turn">
+      <div class="turnTextBox">
+        <div class="turnText">
+          Gira tu móvil a como lo usas siempre para poder usar la plataforma y
+          así ayudar a los animalitos.
+        </div>
+      </div>
+    </div>
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+        <input
+          type="checkbox"
+          onclick="validate()"
+          id="remember"
+          name="remember"
+        />
+
+        <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+        <ul id="menu">
+          <a hidden id="apadrinaLink" href="#" onclick="hideMenu()"
+            ><li>Apadrina <i class="fa-solid fa-paw"></i></li
+          ></a>
+          <a hidden id="contactLink" href="#" onclick="hideMenu()"
+            ><li>Contacta <i class="fa-solid fa-address-book"></i></li
+          ></a>
+          <a hidden id="policyLink" href="#" onclick="hideMenu()"
+            ><li>Política de Privacidad</li></a
+          >
+          <a hidden id="termsLink" href="#" onclick="hideMenu()"
+            ><li>Términos y condiciones</li></a
+          >
+          <a hidden id="blogLink" href="#" onclick="hideMenu()"
+            ><li>Blog <i class="fa fa-book"></i></li
+          ></a>
+        </ul>
+      </div>
+    </nav>
+    <!--hamburger menu ends-->
+    <div class="container">
+      <div class="row">
+        <div class="header">
+          <h1>¿Qué animales apadrinamos?</h1>
+          <p>
+            <span style="font-size: 12px">29/02/2023 -- Alejandro</span><br />
+            Lo más común, a lo que estamos acostumbrados, es apadrinar perros y
+            gatos, ¿pero qué pasa con el resto?<br />
+          </p>
+        </div>
+        <div class="content">
+          <style>
+            .container {
+              display: flex;
+              justify-content: center;
+            }
+            img {
+              width: 30vw;
+              height: 30vw;
+            }
+            .image {
+              flex-basis: 40%;
+              display: flex;
+              justify-content: center;
+            }
+            .text {
+              font-size: 10px;
+              padding-left: 20px;
+            }
+            @media (max-width: 500px) {
+              .container {
+                flex-direction: column;
+              }
+              img {
+                width: 50vw;
+                height: 50vw;
+                margin-bottom: 2vw;
+              }
+              .container .row {
+                width: 95vw;
+              }
+            }
+          </style>
+
+          <div class="container">
+            <div class="image">
+              <img src="./images/monkeys.webp" />
+            </div>
+            <div class="text" style="line-height: 1.5">
+              <h2>
+                Todos amamos a los animales, es un hecho irrefutable, sin
+                embargo, parece que la mayoría olvida que no son solo las
+                mascotas las que padecen y necesitan de nuestro apoyo.<br /><br />
+                Obviamente los perritos y gatitos de todo el mundo son
+                merecedores de nuestro total apoyo y cariño, y lo tienen. No
+                obstante, no debemos dejar de lado al resto de especies, las
+                cuales son ignoradas la mayor parte del tiempo. El punto no es
+                echarle la culpa a ningún espectador o voluntario a ayudar, pues
+                es normal, no se nos enseña, se dejan en segundo plano y pasan
+                desapercibidos.<br /><br />Es por eso que en ApadrinaGratis
+                trabajamos con refugios de todos los tipos, tamaños y colores
+                posibles, desde ranas, lagartos y tortugas, hasta vacas, lobos y
+                simios. Mi mayor deseo con este proyecto es que se pueda
+                destinar ayuda a todos los necesitados, sin ser excluyente de
+                ninguna manera.<br /><br />Quizás por el momento no estén todos
+                los animales posibles disponibles para ser apadrinados aún, pero
+                estoy trabajando todo lo que puedo por conectar a los refugios
+                más especiales con esta herramienta, para que entre todos les
+                podamos apoyar.<br /><br />
+                Tengo entre ceja y ceja algún refugio extranjero también, ¿por
+                qué limitarnos solo a España? Hay animales en todo el mundo que
+                necesitan de nuestra ayuda. Es por eso que si el sitio funciona
+                tengo como proyecto de futuro expandirlo en más países y, quién
+                sabe, quizás a más áreas aparte de los animales.<br /><br />
+                Pero de momento con ayudar a los animales, a todos ellos sin excluir por especie ni país, creo que
+                ApadrinaGratis estará totalmente orgullosa de sí misma.<br /><br />
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footerText">
+        <i class="fa-solid fa-paw"></i
+        >ApadrinaGratis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2023&#169; All
+        rights reserved.
+      </div>
+    </div>
+    <!--div escondido para rellenar con palabras-->
+    <div hidden>
+      Este div esta para realizar pruebas de SEO y posicionamiento, comprobando
+      si el número de palabras es realmente útil y necesario para la calidad de
+      las páginas del mínimo producto viable de mi plataforma ApadrinaGratis, en
+      la cual estoy probando todo el mundo del marketing, la publicidad digital
+      y la programación. Un texto de prueba es un fragmento de texto que se
+      utiliza para verificar la funcionalidad y el diseño de una página web, una
+      aplicación o cualquier otro tipo de software. Estos textos se usan para
+      comprobar que los elementos de la interfaz se ajustan adecuadamente y que
+      los botones, menús, enlaces y otros elementos interactivos funcionan
+      correctamente. Los textos de prueba suelen ser fragmentos generados
+      aleatoriamente, sin sentido ni coherencia, y que no tienen un propósito
+      comunicativo real. Por lo general, se utilizan palabras en latín, como el
+      conocido "Lorem ipsum", que se repiten varias veces para crear un texto
+      más largo. La práctica de utilizar textos de prueba es muy común en el
+      diseño web y en el desarrollo de software en general. Esto se debe a que
+      permite a los diseñadores y desarrolladores probar la funcionalidad y el
+      aspecto visual de sus productos antes de lanzarlos al público. Además,
+      ayuda a evitar errores y a detectar posibles problemas antes de que los
+      usuarios finales los experimenten. Otro uso común de los textos de prueba
+      es en la creación de maquetas o mockups. Estas son representaciones
+      visuales de un diseño, que se utilizan para evaluar su apariencia y su
+      funcionalidad antes de llevarlo a la producción final. En este caso, los
+      textos de prueba se utilizan para rellenar los espacios en blanco y
+      simular el contenido real que se utilizará en la versión final. Los textos
+      de prueba también se utilizan para crear plantillas o themes en los
+      sistemas de gestión de contenido, como WordPress o Joomla. Estas
+      plantillas proporcionan un marco de trabajo para los diseñadores, que
+      pueden personalizar y adaptar a sus necesidades sin tener que empezar
+      desde cero. Los textos de prueba se utilizan para rellenar los campos de
+      texto y ayudar a visualizar cómo se verá el contenido real en la
+      plantilla. Aunque los textos de prueba no tienen un propósito comunicativo
+      real, su uso no debe ser subestimado. Son una herramienta importante en el
+      proceso de diseño y desarrollo de software, que permite a los
+      profesionales detectar y corregir errores antes de que los usuarios
+      finales los experimenten. Además, pueden ayudar a mejorar la experiencia
+      del usuario, ya que permiten a los diseñadores evaluar la legibilidad y la
+      accesibilidad del contenido en diferentes dispositivos y plataformas. En
+      conclusión, un texto de prueba es un fragmento de texto utilizado para
+      verificar la funcionalidad y el diseño de una página web, una aplicación o
+      cualquier otro tipo de software. Aunque no tienen un propósito
+      comunicativo real, son una herramienta importante en el proceso de diseño
+      y desarrollo de software, que permite a los profesionales detectar y
+      corregir errores antes de lanzarlos al público.
+    </div>
+  </body>
+</html>
