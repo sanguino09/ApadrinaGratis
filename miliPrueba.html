@@ -181,29 +181,35 @@
             .container {
               display: flex;
               justify-content: center;
+              flex-direction: column;
             }
             img {
               width: 30vw;
               height: 30vw;
             }
             .image {
-              flex-basis: 40%;
               width: 100vw;
               display: flex;
-              flex-direction: row;
+              flex-direction: column;
               justify-content: center;
               color: white;
               text-align: center;
             }
             .image-unlock {
               background-color: #6e6e6e;
-              width: 50vw;
+              width: 30vw;
+              height: 15vh;
               border-radius: 15px;
-              padding-bottom: 15px;
+              margin-left:23vw;
             }
             .text {
               font-size: 10px;
               padding-left: 20px;
+            }
+            .columns {
+              display: flex;
+              flex-direction: row;
+              gap: 2vw;
             }
             @media (max-width: 500px) {
               .container {
@@ -217,6 +223,13 @@
               .container .row {
                 width: 95vw;
               }
+              .columns {
+                flex-direction: column;
+              }
+              .image-unlock {
+                width: 50vw;
+                height: 15vh;
+              }
             }
           </style>
 
@@ -224,9 +237,8 @@
             <div class="image">
               <div class="image-unlock">
                 <br />
-                ¡Mira un anuncio y desbloquea tu Diploma de Apadrinamiento!
-                <br />
-                <i style="margin-top: 20px" class="fa-solid fa-play fa-2xl"></i>
+                <p style="margin-bottom:2vh;">¡Mira un anuncio y desbloquea tu Diploma de Apadrinamiento!</p>
+                <i class="fa-solid fa-play fa-2xl"></i>
               </div>
               <img hidden src="./images/fotoPrueba.png" />
             </div>
@@ -237,27 +249,32 @@
                 Los milpiés son artrópodos terrestres que se encuentran en todo
                 el mundo, y se caracterizan por tener un cuerpo alargado y
                 segmentado, con numerosas patas que se utilizan para desplazarse
-                y para la defensa. <br /><br />Aunque muchas personas los
-                consideran como insectos, los milpiés son en realidad parientes
-                cercanos de las arañas y los escorpiones. A diferencia de los
-                insectos, que tienen solo seis patas, los milpiés pueden tener
-                desde unas pocas decenas hasta varios cientos de patas,
-                dependiendo de la especie. <br /><br />Además de su apariencia
-                única, los milpiés también son conocidos por su defensa química.
-                Cuando se sienten amenazados, pueden secretar una sustancia
-                tóxica que repele a los depredadores. Algunas especies incluso
-                son capaces de producir cianuro, un veneno mortal para muchos
-                animales. <br /><br />A pesar de su capacidad defensiva, los
-                milpiés son inofensivos para los humanos y pueden ser
-                beneficiosos para el ecosistema al descomponer la materia
-                orgánica y liberar nutrientes en el suelo. Sin embargo, algunas
-                especies pueden causar problemas en los jardines y las
-                plantaciones al comer las raíces y las hojas de las plantas.
-                <br /><br />En general, los milpiés son criaturas fascinantes
-                que merecen nuestra atención y respeto. Aunque pueden parecer
-                extraños e incluso aterradores a primera vista, son una parte
-                importante de la biodiversidad de nuestro planeta y merecen
-                nuestro cuidado y protección.
+                y para la defensa. <br /><br />
+                <div class="columns">
+                  <img src="./images/milpies.webp" /><br />
+                  Aunque muchas personas los consideran como insectos, los
+                  milpiés son en realidad parientes cercanos de las arañas y los
+                  escorpiones.<br /><br />
+                  A diferencia de los insectos, que tienen solo seis patas, los
+                  milpiés pueden tener desde unas pocas decenas hasta varios
+                  cientos de patas, dependiendo de la especie.
+                  <br /><br />Además de su apariencia única, los milpiés también
+                  son conocidos por su defensa química. Cuando se sienten
+                  amenazados, pueden secretar una sustancia tóxica que repele a
+                  los depredadores. Algunas especies incluso son capaces de
+                  producir cianuro, un veneno mortal para muchos animales.
+                  <br /><br />A pesar de su capacidad defensiva, los milpiés son
+                  inofensivos para los humanos y pueden ser beneficiosos para el
+                  ecosistema al descomponer la materia orgánica y liberar
+                  nutrientes en el suelo. Sin embargo, algunas especies pueden
+                  causar problemas en los jardines y las plantaciones al comer
+                  las raíces y las hojas de las plantas. <br /><br />En general,
+                  los milpiés son criaturas fascinantes que merecen nuestra
+                  atención y respeto. Aunque pueden parecer extraños e incluso
+                  aterradores a primera vista, son una parte importante de la
+                  biodiversidad de nuestro planeta y merecen nuestro cuidado y
+                  protección.
+                </div>
               </h2>
             </div>
           </div>
