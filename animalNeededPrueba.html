@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="ApadrinaGratis. Apadrinar. Gratis. Ayudar. Animales. Anuncios. Plataforma."
+    />
+    <meta
+      name="description"
+      content="Apadrina al refugio de Xtrauss. Un santuario de animales exóticos, lleno de peculiaridades, desde ranas e insectos hasta iguanas y tarántulas."
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2d2b11dff3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="index.js"></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8040987598080187"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="images/paw.ico" />
+    <title>Prueba Animal Necesitado</title>
+  </head>
+  <body>
+    <!-- (A) THIS WILL SHOW ON THE WRONG ORIENTATION -->
+    <div class="turn">
+      <div class="turnTextBox">
+        <div class="turnText">
+          Gira tu móvil a como lo usas siempre para poder usar la plataforma y
+          así ayudar a los animalitos.
+        </div>
+      </div>
+    </div>
+    <!--starts foldable hamburger menu-->
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+        <input
+          type="checkbox"
+          onclick="validate()"
+          id="remember"
+          name="remember"
+        />
+
+        <!--
+            Some spans to act as a hamburger.
+            
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+        <ul id="menu">
+          <a hidden id="apadrinaLink" href="#" onclick="hideMenu()"
+            ><li>Apadrina <i class="fa-solid fa-paw"></i></li
+          ></a>
+          <a hidden id="contactLink" href="#" onclick="hideMenu()"
+            ><li>Contacta<i class="fa-solid fa-address-book"></i></li
+          ></a>
+          <a hidden id="policyLink" href="#" onclick="hideMenu()"
+            ><li>Política de Privacidad</li></a
+          >
+          <a hidden id="termsLink" href="#" onclick="hideMenu()"
+            ><li>Términos y condiciones</li></a
+          >
+          <a hidden id="blogLink" href="#" onclick="hideMenu()"
+            ><li>Blog <i class="fa fa-book"></i></li
+          ></a>
+        </ul>
+      </div>
+    </nav>
+    <!--ends foldable hamburger menu-->
+    <div class="parent">
+      <!--profile pic-->
+      <div class="div1">
+        <div class="circle animate__animated animate__flip animate__delay-1s">
+          <img class="profilePic" alt="fotoUsuario" src="images/d.webp" />
+        </div>
+      </div>
+      <!--ends profile pic-->
+      <div class="div2">
+        <div class="upperButtons">
+          <!--starts share button-->
+          <div class="mainbox">
+            <input type="checkbox" id="check" />
+            <label for="check"
+              ><i class="share fa-solid fa-share-alt fa-1x"></i
+            ></label>
+            <div class="media-icons">
+              <a
+                target="blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/sharer.php?u=https://www.apadrinagratis.com/"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                target="blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/share?url=https://www.apadrinagratis.com/&text=Apadrina animales gratis, apoya a los refugios viendo anuncios y desbloqueando videos y fotos de los animalitos.&hashtags=animales,apadrinar,gratis,cuidar"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                target="blank"
+                rel="noopener noreferrer"
+                href="https://api.whatsapp.com/send?text=Apadrina refugios de animales totalmente gratis tan solo viendo anuncios https://www.apadrinagratis.com/"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+
+          <!--ends share button-->
+          <!--starts bell alarm-->
+          <div class="bellAlarm">
+            <i class="fa-solid fa-bell fa-2x"></i>
+          </div>
+        </div>
+        <!--ends bell alarm-->
+        <div class="shelterName">Ayuda a Coco</div>
+        <div class="shelterDescriptionBox">
+          <div class="shelterDescription">
+            Coco es un perrito con una enfermedad que necesita de un tratamiento
+            muy caro, por eso necesitamos tu ayuda.
+          </div>
+        </div>
+
+        <div class="sponsorButtonDiv">
+          <button class="sponsorButton">
+            <div class="sponsorButtonText">Ver anuncio</div>
+            <i class="playLogo fa fa-play fa-2x"></i>
+          </button>
+        </div>
+
+        <!--starts gallery-->
+        <!--gallery icon and white bar-->
+        <div class="galleryIconBox">
+          <div class="galleryIcon">
+            <i
+              onclick="imgSwitch()"
+              id="imgIcon"
+              class="fa-solid fa-image fa-lg"
+            >
+              <i
+                style="margin-left: 30vw"
+                id="vidIcon"
+                class="fa-solid fa-video"
+              >
+              </i>
+            </i>
+          </div>
+          <div class="barUnderBox">
+            <div onclick="imgSwitch()" id="images"></div>
+            <div onclick="imgSwitch()" id="video"></div>
+          </div>
+        </div>
+        <!--gallery-->
+        <section class="main">
+          <div class="lockScreen"> Realiza la acción para desbloquear la galería de Coco y ver qué tan contenta está por tu ayuda.</div>
+          <div class="grid">
+            <img class="images-left" src="images/d1.webp" alt="animalito" />
+            <img class="images-right" src="images/d2.webp" alt="animalito" />
+            <img class="images-left" src="images/d3.webp" alt="animalito" />
+            <img class="images-left" src="images/d4.webp" alt="animalito" />
+          </div>
+        </section>
+      </div>
+      <div class="footer">
+        <div class="appName"><i class="fa-solid fa-paw"></i>ApadrinaGratis</div>
+      </div>
+    </div>
+    <div hidden>
+      Este div esta para realizar pruebas de SEO y posicionamiento, comprobando
+      si el número de palabras es realmente útil y necesario para la calidad de
+      las páginas del mínimo producto viable de mi plataforma ApadrinaGratis, en
+      la cual estoy probando todo el mundo del marketing, la publicidad digital
+      y la programación. Un texto de prueba es un fragmento de texto que se
+      utiliza para verificar la funcionalidad y el diseño de una página web, una
+      aplicación o cualquier otro tipo de software. Estos textos se usan para
+      comprobar que los elementos de la interfaz se ajustan adecuadamente y que
+      los botones, menús, enlaces y otros elementos interactivos funcionan
+      correctamente. Los textos de prueba suelen ser fragmentos generados
+      aleatoriamente, sin sentido ni coherencia, y que no tienen un propósito
+      comunicativo real. Por lo general, se utilizan palabras en latín, como el
+      conocido "Lorem ipsum", que se repiten varias veces para crear un texto
+      más largo. La práctica de utilizar textos de prueba es muy común en el
+      diseño web y en el desarrollo de software en general. Esto se debe a que
+      permite a los diseñadores y desarrolladores probar la funcionalidad y el
+      aspecto visual de sus productos antes de lanzarlos al público. Además,
+      ayuda a evitar errores y a detectar posibles problemas antes de que los
+      usuarios finales los experimenten. Otro uso común de los textos de prueba
+      es en la creación de maquetas o mockups. Estas son representaciones
+      visuales de un diseño, que se utilizan para evaluar su apariencia y su
+      funcionalidad antes de llevarlo a la producción final. En este caso, los
+      textos de prueba se utilizan para rellenar los espacios en blanco y
+      simular el contenido real que se utilizará en la versión final. Los textos
+      de prueba también se utilizan para crear plantillas o themes en los
+      sistemas de gestión de contenido, como WordPress o Joomla. Estas
+      plantillas proporcionan un marco de trabajo para los diseñadores, que
+      pueden personalizar y adaptar a sus necesidades sin tener que empezar
+      desde cero. Los textos de prueba se utilizan para rellenar los campos de
+      texto y ayudar a visualizar cómo se verá el contenido real en la
+      plantilla. Aunque los textos de prueba no tienen un propósito comunicativo
+      real, su uso no debe ser subestimado. Son una herramienta importante en el
+      proceso de diseño y desarrollo de software, que permite a los
+      profesionales detectar y corregir errores antes de que los usuarios
+      finales los experimenten. Además, pueden ayudar a mejorar la experiencia
+      del usuario, ya que permiten a los diseñadores evaluar la legibilidad y la
+      accesibilidad del contenido en diferentes dispositivos y plataformas. En
+      conclusión, un texto de prueba es un fragmento de texto utilizado para
+      verificar la funcionalidad y el diseño de una página web, una aplicación o
+      cualquier otro tipo de software. Aunque no tienen un propósito
+      comunicativo real, son una herramienta importante en el proceso de diseño
+      y desarrollo de software, que permite a los profesionales detectar y
+      corregir errores antes de lanzarlos al público.
+    </div>
+  </body>
+</html>
