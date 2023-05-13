@@ -65,3 +65,7 @@ function imgSwitch() {
     img = true;
   }
 }
+
+function unlock(){
+  document.getElementById("lockScreen").setAttribute("hidden", "");
+}

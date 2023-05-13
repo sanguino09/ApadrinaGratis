@@ -29,7 +29,7 @@ body {
   height: 100vh;
   width: 100vw;
 }
-.lockScreen{
+#lockScreen{
   position: absolute;
   padding: 20%;
   width:100%;
