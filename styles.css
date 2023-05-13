@@ -29,7 +29,18 @@ body {
   height: 100vh;
   width: 100vw;
 }
-
+.lockScreen{
+  position: absolute;
+  padding: 20%;
+  width:100%;
+  height:100%;
+  background-color: #232323;
+  opacity: 90%;
+  color: #ededed;
+  font-weight: bolder;
+  font-size: larger;
+  text-align: center;
+}
 .div1 {
   grid-area: 1 / 3 / 2 / 6;
   display: flex;
