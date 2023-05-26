@@ -4,37 +4,47 @@
     <meta charset="UTF-8" />
     <meta
       name="keywords"
-      content="ApadrinaGratis. Apadrinar. Gratis. Ayudar. Animales. Anuncios. Plataforma."
+      content="Blog. Lanzamiento. ApadrinaGratis. Apadrinar. Gratis. Ayudar. Animales. Anuncios. Plataforma."
     />
     <meta
       name="description"
-      content="ApadrinaGratis, la plataforma con la que puedes ayudar animalitos totalmente gratis, con tan solo ver anuncios, viendo también sus fotos y vídeos especiales."
+      content="El blog en el que hablo sobre el lanzamiento del sitio."
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" href="images/paw.ico" />
+    <link rel="icon" href="../images/paw.ico" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8040987598080187"
+     crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <script
       src="https://kit.fontawesome.com/2d2b11dff3.js"
       crossorigin="anonymous"
     ></script>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <script src="./index.js"></script>
-    <link rel="icon" href="images/paw.ico" />
+    <script src="../js/index.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8040987598080187"
      crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/paw.ico" />
     <title>
-      ApadrinaGratis | Ayuda animales totalmente gratis.
+      ApadrinaGratis | El lanzamiento de ApadrinaGratis
     </title>
   </head>
   <body>
     <style>
+      .footer {
+        bottom: -9px;
+        height: 4vh;
+        width: 100vw;
+        font-size: 12px;
+        position: relative;
+        background-color: #383838;
+        color: white;
+        font-weight: lighter;
+        display: flex;
+        justify-content: center;
+      }
       @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
       * {
         margin: 0px;
@@ -42,28 +52,21 @@
         box-sizing: border-box;
         font-family: "Lato", sans-serif;
       }
-      #menuToggle span {
-        background-color: white;
-      }
-      body{
-        background-color: #383838;
-      }
       .container {
         width: 100%;
-        background-color: #383838;
       }
       .container .row {
         width: 80%;
         margin: auto;
       }
       .container .row .header {
-        width: auto;
+        width: 80%;
         text-align: center;
         margin: auto;
       }
       .container .row .header h1 {
-        padding-top: 30px;
-        font-size: 45px;
+        padding-top: 90px;
+        font-size: 30px;
         color: #b39c4d;
       }
       .container .row .header p {
@@ -77,6 +80,7 @@
         justify-content: center;
         align-items: center;
         margin: auto;
+        margin-top: 2vw;
       }
       .content .card {
         flex: 1;
@@ -108,6 +112,14 @@
         }
       }
     </style>
+    <div class="turn">
+      <div class="turnTextBox">
+        <div class="turnText">
+          Gira tu móvil a como lo usas siempre para poder usar la plataforma y
+          así ayudar a los animalitos.
+        </div>
+      </div>
+    </div>
     <nav role="navigation">
       <div id="menuToggle">
         <!--
@@ -140,8 +152,8 @@
             ><li>Apadrina <i class="fa-solid fa-paw"></i></li
           ></a>
           <a hidden id="contactLink" href="#" onclick="hideMenu()"
-            ><li>Contacta</li></a
-          >
+            ><li>Contacta <i class="fa-solid fa-address-book"></i></li
+          ></a>
           <a hidden id="policyLink" href="#" onclick="hideMenu()"
             ><li>Política de Privacidad</li></a
           >
@@ -149,8 +161,8 @@
             ><li>Términos y condiciones</li></a
           >
           <a hidden id="blogLink" href="#" onclick="hideMenu()"
-            ><li>Blog <i class="fa fa-book"></i></li></a
-          >
+            ><li>Blog <i class="fa fa-book"></i></li
+          ></a>
         </ul>
       </div>
     </nav>
@@ -158,57 +170,99 @@
     <div class="container">
       <div class="row">
         <div class="header">
-          <h1>Refugios</h1>
-          <p style="color: white">
-            Apadrina gratis, viendo unos pocos anuncios puedes ayudar a cientos
-            de animalitos.
+          <h1>El lanzamiento de ApadrinaGratis</h1>
+          <p>
+            <span style="font-size: 12px">13/02/2023 -- Alejandro</span><br />
+            La plataforma gratuita para apoyar a los refugios, ¡apadrina o
+            amadrina y aporta a este bellísima comunidad!<br />
           </p>
         </div>
         <div class="content">
-          <a href="./animalNeededPrueba.html">
-            <div class="card animate__animated animate__rubberBand animate__delay-1s">
-              <img src="images/d.webp" alt="refugio" />
-              <h4>¡Ayuda a Coco!</h4>
-              <p>
-                Se necesita recaudar dinero para la operación de Coco, nuestra perrita.
-                ¡apoyános!
-                <br /><br />
-                <a style="color: #b39c4d" href="./animalNeededPrueba.html"
-                  >Visita su sitio virtual</a
-                >
-              </p>
+          <style>
+            .container {
+              display: flex;
+              justify-content: center;
+            }
+            img {
+              width: 30vw;
+              height: 30vw;
+            }
+            .image {
+              flex-basis: 40%;
+              display: flex;
+              justify-content: center;
+            }
+            .text {
+              font-size: 10px;
+              padding-left: 20px;
+            }
+            @media (max-width: 500px) {
+              .container {
+                flex-direction: column;
+              }
+              img {
+                width: 50vw;
+                height: 50vw;
+                margin-bottom: 2vw;
+              }
+              .container .row {
+                width: 95vw;
+              }
+            }
+          </style>
+
+          <div class="container">
+            <div class="image">
+              <img src="../images/templowasa.webp" alt="templo" />
             </div>
-            </a>
-          <div class="card">
-            <img src="images/multimedia.webp" alt="refugio" />
-            <h4>Refugio 2</h4>
-            <p>
-              Aquí irán los distintos refugios y asociaciones que se incorporen
-              a este movimiento que busca ayudar a los animales más
-              desfavorecidos.<br /><br />
-            </p>
-          </div>
-          <div class="card">
-            <img src="images/multimedia.webp" alt="refugio" />
-            <h4>Refugio 3</h4>
-            <p>
-              Aquí irán los distintos refugios y asociaciones que se incorporen
-              a este movimiento que busca ayudar a los animales más
-              desfavorecidos.<br /><br />
-            </p>
-          </div>
-          <div class="card">
-            <img src="images/multimedia.webp" alt="refugio" />
-            <h4>Refugio 4</h4>
-            <p>
-              Aquí irán los distintos refugios y asociaciones que se incorporen
-              a este movimiento que busca ayudar a los animales más
-              desfavorecidos.<br /><br />
-            </p>
+            <div class="text" style="line-height: 1.5">
+              <h2>
+                La plataforma que sirve como refugio para los refugios, ayudando
+                económicamente a todos los que salvan las tan preciadas vidas de
+                los animales gracias a que sus seguidores vean anuncios que no
+                cuestan nada.<br /><br />A lo largo de estos meses, con la idea
+                de aportar a un mundo con cada vez más problemas y menos
+                soluciones, me he estado informando sobre cómo se sustentan los
+                refugios, ¿qué es de los que ayudan a los desamparados? No podía
+                creer que una labor tan bonita fuera tan mal recompensada, pero
+                así es la realidad.<br /><br />Fue así como llegué a la
+                encrucijada de buscar una herramienta, un método que pudiera dar
+                suficiente beneficio, aprovechando el mundo digital y las redes
+                ya tan globalizadas y populares, para que los refugios pudieran,
+                no solo cuidar a los animales, sino vivir por y para ello.<br /><br />Investigué
+                sobre las ya existentes maneras de ganar dinero y monetizar los
+                refugios, entre el extenso catálogo de vías económicas me fijé
+                en el apadrinamiento, y sobre todo, en sus problemas.
+                <br /><br />A la gente le suele costar más dar un apoyo
+                económico, es normal y totalmente comprensible. Por ello pensé
+                en cómo darle a la gente que quería ayudar la capacidad para
+                hacerlo de manera rápida, eficaz y gratuita. Y entonces llegué a
+                ApadrinaGratis.<br /><br />Gracias a la publicidad la mayoría de
+                plataformas que ofrecen servicios gratuitos se sustentan, se
+                mantienen a flote por medio de mostrar productos a los usuarios
+                de las redes de Internet, es por eso que vamos a ayudar a los
+                animales de igual manera, gracias a vuestra coolaboración.<br /><br />Con
+                ver anuncios podréis obtener el diploma que afirma vuestro
+                apadrinaje, para poder compartirlo por las redes y demostrar
+                vuestro apoyo, a su vez das la oportunidad a esos animalitos de
+                tener una vida plena y feliz junto a la gente que se esfuerza
+                cada día por hacer para ellos un mundo mejor.<br /><br />
+                Bastante sencillo, ¿verdad? ¡Únete a la acción y mejoremos la
+                situación para los más peluditos!<br /><br />
+              </h2>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="footer">
+      <div class="footerText">
+        <i class="fa-solid fa-paw"></i
+        >ApadrinaGratis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2023&#169; All
+        rights reserved.
+      </div>
+    </div>
+    <!--div escondido para rellenar con palabras-->
     <div hidden>
       Este div esta para realizar pruebas de SEO y posicionamiento, comprobando
       si el número de palabras es realmente útil y necesario para la calidad de

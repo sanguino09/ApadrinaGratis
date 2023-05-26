@@ -16,25 +16,28 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/2d2b11dff3.js"
       crossorigin="anonymous"
     ></script>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
     <script src="./index.js"></script>
-    <link rel="icon" href="images/paw.ico" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8040987598080187"
-     crossorigin="anonymous"></script>
+    <link rel="icon" href="./images/paw.ico" />
     <title>
-      ApadrinaGratis | Ayuda animales totalmente gratis.
+      ApadrinaGratis | Diploma Turbo
     </title>
   </head>
   <body>
     <style>
+      canvas#confetti {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 1000;
+        pointer-events: none;
+      }
       @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
       * {
         margin: 0px;
@@ -42,28 +45,52 @@
         box-sizing: border-box;
         font-family: "Lato", sans-serif;
       }
-      #menuToggle span {
-        background-color: white;
-      }
-      body{
+      body {
         background-color: #383838;
+        color: white;
+        text-align: center;
+        overflow-y: hidden;
       }
       .container {
         width: 100%;
-        background-color: #383838;
+        display: flex;
+        justify-content: center;
       }
-      .container .row {
-        width: 80%;
-        margin: auto;
+      .diplomaTitleWidthMax {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .container .diplomaBox {
+        width: 30%;
+        height: 87vh;
+        margin-top: 9vh;
+        color: #383838;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 22px;
+        flex-direction: column;
+      }
+      .diplomaImage {
+        width: 100%;
+        max-width: 400px;
+        height: 72vh;
+        border-radius: 20px;
+      }
+      .diplomaBody {
+        width: 100%;
       }
       .container .row .header {
-        width: auto;
+        width: 80%;
         text-align: center;
         margin: auto;
       }
       .container .row .header h1 {
-        padding-top: 30px;
-        font-size: 45px;
+        padding-top: 90px;
+        font-size: 30px;
         color: #b39c4d;
       }
       .container .row .header p {
@@ -77,6 +104,7 @@
         justify-content: center;
         align-items: center;
         margin: auto;
+        margin-top: 2vw;
       }
       .content .card {
         flex: 1;
@@ -106,8 +134,109 @@
         .content {
           flex-direction: column;
         }
+        .diplomaTitleBox {
+          margin-top: -30px;
+          width: 55vw;
+          align-items: flex-start;
+        }
+        .container .diplomaBox {
+          width: 90vw;
+        }
+        .diplomaBBR {
+          visibility: hidden;
+        }
+        #menuToggle span {
+          background-color: white;
+        }
+      }
+      .mainbox {
+        position: absolute;
+        left: 6px;
+        top: 3px;
+      }
+      #check:checked ~ .media-icons {
+        opacity: 1;
+        pointer-events: auto;
+        top: -5px;
+        left: 140px;
+        background-color: #fff;
+      }
+      .fa-facebook,
+      .fa-whatsapp,
+      .fa-twitter {
+        color: #383838;
+      }
+      .media-icons::before {
+        background-color: #fff;
+        left: 5%;
+        top: 20px;
+      }
+      #my-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100000;
+        /*visibility: hidden;*/
+      }
+      #my-canvas.active {
+        visibility: hidden;
       }
     </style>
+    <canvas id="my-canvas"></canvas>
+    <script src="./index.min.js"></script>
+    <script>
+      let confe = document.querySelector("#my-canvas");
+      /*window.onload = (event) => {
+        confe.classList.add("active");
+        console.log("page is fully loaded");
+      };*/
+      var confettiSettings = { target: "my-canvas" };
+      var confetti = new ConfettiGenerator(confettiSettings);
+      confetti.render();
+      setTimeout(() => {
+        document.getElementById("my-canvas").setAttribute("hidden", "");
+      }, 2000);
+    </script>
+
+    <div class="turn">
+      <div class="turnTextBox">
+        <div class="turnText">
+          Gira tu móvil a como lo usas siempre para poder usar la plataforma y
+          así ayudar a los animalitos.
+        </div>
+      </div>
+    </div>
+    <!--starts share button-->
+    <div class="mainbox">
+      <input type="checkbox" id="check" />
+      <label for="check"
+        ><i class="share fa-solid fa-share-alt fa-1x"></i
+      ></label>
+      <div class="media-icons">
+        <a
+          target="blank"
+          rel="noopener noreferrer"
+          href="https://www.facebook.com/sharer.php?u=https://www.apadrinagratis.com/"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          target="blank"
+          rel="noopener noreferrer"
+          href="https://twitter.com/share?url=https://www.apadrinagratis.com/&text=Apadrina animales gratis, apoya a los refugios viendo anuncios y desbloqueando videos y fotos de los animalitos.&hashtags=animales,apadrinar,gratis,cuidar"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          target="blank"
+          rel="noopener noreferrer"
+          href="https://api.whatsapp.com/send?text=Apadrina refugios de animales totalmente gratis tan solo viendo anuncios https://www.apadrinagratis.com/"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+    </div>
+
+    <!--ends share button-->
     <nav role="navigation">
       <div id="menuToggle">
         <!--
@@ -135,13 +264,13 @@
               Too bad the menu has to be inside of the button
               but hey, it's pure CSS magic.
               -->
-        <ul id="menu">
+        <ul hidden id="menu">
           <a hidden id="apadrinaLink" href="#" onclick="hideMenu()"
             ><li>Apadrina <i class="fa-solid fa-paw"></i></li
           ></a>
           <a hidden id="contactLink" href="#" onclick="hideMenu()"
-            ><li>Contacta</li></a
-          >
+            ><li>Contacta <i class="fa-solid fa-address-book"></i></li
+          ></a>
           <a hidden id="policyLink" href="#" onclick="hideMenu()"
             ><li>Política de Privacidad</li></a
           >
@@ -149,66 +278,37 @@
             ><li>Términos y condiciones</li></a
           >
           <a hidden id="blogLink" href="#" onclick="hideMenu()"
-            ><li>Blog <i class="fa fa-book"></i></li></a
-          >
+            ><li>Blog <i class="fa fa-book"></i></li
+          ></a>
         </ul>
       </div>
     </nav>
     <!--hamburger menu ends-->
     <div class="container">
-      <div class="row">
-        <div class="header">
-          <h1>Refugios</h1>
-          <p style="color: white">
-            Apadrina gratis, viendo unos pocos anuncios puedes ayudar a cientos
-            de animalitos.
+      <div class="diplomaBox">
+        <div class="diplomaBody">
+          <div>
+            <a
+              download="turbo.png"
+              href="./images/turboDiploma.png"
+              title="ImageName"
+            >
+              <img
+                class="diplomaImage"
+                src="./images/turboDiploma.webp"
+                alt="animalito"
+            /></a>
+          </div>
+          <p style="font-size: 12px">(Toca la foto para descargarla)</p>
+          <p style="font-size: 15px">
+            <br />¡Compártela por Instagram y otras redes para que los demás
+            también se unan a la causa!.
           </p>
-        </div>
-        <div class="content">
-          <a href="./animalNeededPrueba.html">
-            <div class="card animate__animated animate__rubberBand animate__delay-1s">
-              <img src="images/d.webp" alt="refugio" />
-              <h4>¡Ayuda a Coco!</h4>
-              <p>
-                Se necesita recaudar dinero para la operación de Coco, nuestra perrita.
-                ¡apoyános!
-                <br /><br />
-                <a style="color: #b39c4d" href="./animalNeededPrueba.html"
-                  >Visita su sitio virtual</a
-                >
-              </p>
-            </div>
-            </a>
-          <div class="card">
-            <img src="images/multimedia.webp" alt="refugio" />
-            <h4>Refugio 2</h4>
-            <p>
-              Aquí irán los distintos refugios y asociaciones que se incorporen
-              a este movimiento que busca ayudar a los animales más
-              desfavorecidos.<br /><br />
-            </p>
-          </div>
-          <div class="card">
-            <img src="images/multimedia.webp" alt="refugio" />
-            <h4>Refugio 3</h4>
-            <p>
-              Aquí irán los distintos refugios y asociaciones que se incorporen
-              a este movimiento que busca ayudar a los animales más
-              desfavorecidos.<br /><br />
-            </p>
-          </div>
-          <div class="card">
-            <img src="images/multimedia.webp" alt="refugio" />
-            <h4>Refugio 4</h4>
-            <p>
-              Aquí irán los distintos refugios y asociaciones que se incorporen
-              a este movimiento que busca ayudar a los animales más
-              desfavorecidos.<br /><br />
-            </p>
-          </div>
+          <br /><br />
         </div>
       </div>
     </div>
+    <!--div escondido para rellenar con palabras-->
     <div hidden>
       Este div esta para realizar pruebas de SEO y posicionamiento, comprobando
       si el número de palabras es realmente útil y necesario para la calidad de

@@ -4,37 +4,45 @@
     <meta charset="UTF-8" />
     <meta
       name="keywords"
-      content="ApadrinaGratis. Apadrinar. Gratis. Ayudar. Animales. Anuncios. Plataforma."
+      content="Idea. Creatividad. Oportunidad. ApadrinaGratis. Apadrinar. Gratis. Ayudar. Animales. Anuncios. Plataforma."
     />
     <meta
       name="description"
-      content="ApadrinaGratis, la plataforma con la que puedes ayudar animalitos totalmente gratis, con tan solo ver anuncios, viendo también sus fotos y vídeos especiales."
+      content="El blog en el que cuento cómo ideé la plataforma."
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" href="images/paw.ico" />
+    <link rel="icon" href="../images/paw.ico" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <script
       src="https://kit.fontawesome.com/2d2b11dff3.js"
       crossorigin="anonymous"
     ></script>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <script src="./index.js"></script>
-    <link rel="icon" href="images/paw.ico" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8040987598080187"
      crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
+    <link rel="icon" href="../images/paw.ico" />
     <title>
-      ApadrinaGratis | Ayuda animales totalmente gratis.
+      ApadrinaGratis | ¿Cómo ideé la plataforma?
     </title>
   </head>
   <body>
     <style>
+      .footer {
+        bottom: -9px;
+        height: 4vh;
+        width: 100vw;
+        font-size: 12px;
+        position: relative;
+        background-color: #383838;
+        color: white;
+        font-weight: lighter;
+        display: flex;
+        justify-content: center;
+      }
       @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
       * {
         margin: 0px;
@@ -42,28 +50,21 @@
         box-sizing: border-box;
         font-family: "Lato", sans-serif;
       }
-      #menuToggle span {
-        background-color: white;
-      }
-      body{
-        background-color: #383838;
-      }
       .container {
         width: 100%;
-        background-color: #383838;
       }
       .container .row {
         width: 80%;
         margin: auto;
       }
       .container .row .header {
-        width: auto;
+        width: 80%;
         text-align: center;
         margin: auto;
       }
       .container .row .header h1 {
-        padding-top: 30px;
-        font-size: 45px;
+        padding-top: 90px;
+        font-size: 30px;
         color: #b39c4d;
       }
       .container .row .header p {
@@ -77,6 +78,7 @@
         justify-content: center;
         align-items: center;
         margin: auto;
+        margin-top: 2vw;
       }
       .content .card {
         flex: 1;
@@ -108,6 +110,14 @@
         }
       }
     </style>
+    <div class="turn">
+      <div class="turnTextBox">
+        <div class="turnText">
+          Gira tu móvil a como lo usas siempre para poder usar la plataforma y
+          así ayudar a los animalitos.
+        </div>
+      </div>
+    </div>
     <nav role="navigation">
       <div id="menuToggle">
         <!--
@@ -140,8 +150,8 @@
             ><li>Apadrina <i class="fa-solid fa-paw"></i></li
           ></a>
           <a hidden id="contactLink" href="#" onclick="hideMenu()"
-            ><li>Contacta</li></a
-          >
+            ><li>Contacta <i class="fa-solid fa-address-book"></i></li
+          ></a>
           <a hidden id="policyLink" href="#" onclick="hideMenu()"
             ><li>Política de Privacidad</li></a
           >
@@ -149,8 +159,8 @@
             ><li>Términos y condiciones</li></a
           >
           <a hidden id="blogLink" href="#" onclick="hideMenu()"
-            ><li>Blog <i class="fa fa-book"></i></li></a
-          >
+            ><li>Blog <i class="fa fa-book"></i></li
+          ></a>
         </ul>
       </div>
     </nav>
@@ -158,57 +168,116 @@
     <div class="container">
       <div class="row">
         <div class="header">
-          <h1>Refugios</h1>
-          <p style="color: white">
-            Apadrina gratis, viendo unos pocos anuncios puedes ayudar a cientos
-            de animalitos.
+          <h1>¿Cómo ideé la plataforma?</h1>
+          <p>
+            <span style="font-size: 12px">25/02/2023 -- Alejandro</span><br />
+            El camino para montar una nueva idea es muy bonito, pero todo tiene
+            su esfuerzo.<br />
           </p>
         </div>
         <div class="content">
-          <a href="./animalNeededPrueba.html">
-            <div class="card animate__animated animate__rubberBand animate__delay-1s">
-              <img src="images/d.webp" alt="refugio" />
-              <h4>¡Ayuda a Coco!</h4>
-              <p>
-                Se necesita recaudar dinero para la operación de Coco, nuestra perrita.
-                ¡apoyános!
-                <br /><br />
-                <a style="color: #b39c4d" href="./animalNeededPrueba.html"
-                  >Visita su sitio virtual</a
-                >
-              </p>
+          <style>
+            .container {
+              display: flex;
+              justify-content: center;
+            }
+            img {
+              width: 30vw;
+              height: 30vw;
+            }
+            .image {
+              flex-basis: 40%;
+              display: flex;
+              justify-content: center;
+            }
+            .text {
+              font-size: 10px;
+              padding-left: 20px;
+            }
+            @media (max-width: 500px) {
+              .container {
+                flex-direction: column;
+              }
+              img {
+                width: 50vw;
+                height: 50vw;
+                margin-bottom: 2vw;
+              }
+              .container .row {
+                width: 95vw;
+              }
+            }
+          </style>
+
+          <div class="container">
+            <div class="image">
+              <img src="../images/idea.webp" alt="ideaWeb" />
             </div>
-            </a>
-          <div class="card">
-            <img src="images/multimedia.webp" alt="refugio" />
-            <h4>Refugio 2</h4>
-            <p>
-              Aquí irán los distintos refugios y asociaciones que se incorporen
-              a este movimiento que busca ayudar a los animales más
-              desfavorecidos.<br /><br />
-            </p>
-          </div>
-          <div class="card">
-            <img src="images/multimedia.webp" alt="refugio" />
-            <h4>Refugio 3</h4>
-            <p>
-              Aquí irán los distintos refugios y asociaciones que se incorporen
-              a este movimiento que busca ayudar a los animales más
-              desfavorecidos.<br /><br />
-            </p>
-          </div>
-          <div class="card">
-            <img src="images/multimedia.webp" alt="refugio" />
-            <h4>Refugio 4</h4>
-            <p>
-              Aquí irán los distintos refugios y asociaciones que se incorporen
-              a este movimiento que busca ayudar a los animales más
-              desfavorecidos.<br /><br />
-            </p>
+            <div class="text" style="line-height: 1.5">
+              <h2>
+                La verdad es que vengo de un mundo bastante distante a este, yo
+                me estoy formando como ingeniero aeroespacial, estoy en mi
+                tercer año de un total de cuatro, pero siempre me apasionó
+                crear.<br /><br />
+                Después de un cursillo de programación puse todo mi foco de
+                atención a pensar en qué podría invertir mis nuevos
+                conocimientos, así que después de algunas charlas conmigo mismo
+                y contra el espejo llegué a que podría desarrollar una
+                plataforma para ayudar a los demás.<br /><br />El cómo llegué a
+                los animales es tema de otra publicación. Siguiendo con el
+                proceso que tuve durante la creación de ApadrinaGratis tenemos
+                que yo llegué a un punto idílico, como al que llegan todos los
+                emprendedores novicios.<br /><br />
+                A partir de la idea de ayudar a los que ayudan a los animales
+                debía ahondar en lo que realmente importaba, el cómo lo haría.
+                Ya que el papel lo aguanta todo me puse a garabatear varios
+                bocetos y propuestas de valor para sopesar cuál sería el camino
+                a seguir.<br /><br />
+                Una vez tuve la estrategia inicial, la columna vertebral de la
+                plataforma, investigué qué sería necesario para lograr cada uno
+                de los campos que abarcaba. De cada problema que resolvía salían
+                otros tres más, fue agotador el hecho de ver tan cerca la meta y
+                sin embargo estar cada vez más lejos.<br /><br />
+                No obstante, ese mismo sentimiento de insatisfacción lo
+                aproveché para perfilar al máximo la estructura, el cómo me
+                acercaría a la gente y cómo interactuarían ellos para apoyar ha
+                sido el apartado que más ha cambiado y seguirá cambiando, pues
+                no paro de actualizarlo constantemente, pues todo siempre puede
+                ser mejor.<br /><br />No me gustaría entrar en detalles
+                técnicos, al menos no en esta publicación, pero el entender cómo
+                funciona la publicidad digital y cómo ganar dinero con ella fue
+                el rompecabezas principal, la incertidumbre de saber si sería
+                rentable o no, pues aunque digan que el Internet tiene respuesta
+                para todo no fue ese mi caso, ya que pareciera que esconden la
+                información.<br /><br />El desarrollo web y todo lo relacionado
+                a la programación fue al final lo de menos, quizás tedioso pero
+                es más mecánico que otra cosa, por muy bueno que seas
+                programando si no tienes un objetivo claro y conciso de poco te
+                sirve.<br /><br />Lo más bonito y quizás también motivador fue
+                el recibir poco a poco a los refugios participantes, aunque a la
+                mayoría no le haya interesado (algo totalmente normal en estas
+                cosas), pues la idea en tu cabeza suena fantástica pero el qué
+                pensarán los demás es otra cosa. Por suerte a ellos también les
+                pareció como a mí y entre todos creamos esta nueva y fresca
+                oportunidad para apoyar a los animalitos.<br /><br />Poco más se
+                puede pincelar por encima, aún quedan muchísimos retos y no
+                estoy nada más que empezando, pero tengo muchísima ilusión por
+                seguir con el proyecto y sacar el máximo para nuestros peluditos
+                amigos.<br /><br />
+              </h2>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="footer">
+      <div class="footerText">
+        <i class="fa-solid fa-paw"></i
+        >ApadrinaGratis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2023&#169; All
+        rights reserved.
+      </div>
+    </div>
+    <!--div escondido para rellenar con palabras-->
     <div hidden>
       Este div esta para realizar pruebas de SEO y posicionamiento, comprobando
       si el número de palabras es realmente útil y necesario para la calidad de
